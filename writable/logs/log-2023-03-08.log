@@ -1,0 +1,60 @@
+ERROR - 2023-03-08 04:33:49 --> mysqli_sql_exception: Table 'db_piutang.my_table' doesn't exist in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT name, ti...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT name, ti...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name, ti...')
+#3 C:\laragon\www\SIPIUTANG\app\Controllers\Home.php(15): CodeIgniter\Database\BaseConnection->query('SELECT name, ti...')
+#4 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#9 {main}
+CRITICAL - 2023-03-08 04:33:49 --> Table 'db_piutang.my_table' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Home.php(15): CodeIgniter\Database\BaseConnection->query('SELECT name, title, email FROM my_table')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-08 05:19:38 --> mysqli_sql_exception: Table 'db_piutang.my_table' doesn't exist in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT name, ti...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT name, ti...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name, ti...')
+#3 C:\laragon\www\SIPIUTANG\app\Controllers\Home.php(15): CodeIgniter\Database\BaseConnection->query('SELECT name, ti...')
+#4 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#9 {main}
+CRITICAL - 2023-03-08 05:19:38 --> Table 'db_piutang.my_table' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Home.php(15): CodeIgniter\Database\BaseConnection->query('SELECT name, title, email FROM my_table')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-08 05:21:26 --> mysqli_sql_exception: Table 'db_piutang.my_table' doesn't exist in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT name, ti...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT name, ti...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name, ti...')
+#3 C:\laragon\www\SIPIUTANG\app\Controllers\Home.php(15): CodeIgniter\Database\BaseConnection->query('SELECT name, ti...')
+#4 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#9 {main}
+CRITICAL - 2023-03-08 05:21:26 --> Table 'db_piutang.my_table' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Home.php(15): CodeIgniter\Database\BaseConnection->query('SELECT name, title, email FROM my_table')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

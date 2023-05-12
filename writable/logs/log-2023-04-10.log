@@ -1,0 +1,1064 @@
+CRITICAL - 2023-04-10 01:06:14 --> Array to string conversion
+in APPPATH\Models\ModelPayment.php on line 33.
+ 1 APPPATH\Models\ModelPayment.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Models\\ModelPayment.php', 33)
+ 2 APPPATH\Controllers\AJAX\Payment.php(25): App\Models\ModelPayment->getPayment([...], [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 01:06:21 --> Array to string conversion
+in APPPATH\Models\ModelPayment.php on line 33.
+ 1 APPPATH\Models\ModelPayment.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Models\\ModelPayment.php', 33)
+ 2 APPPATH\Controllers\AJAX\Payment.php(25): App\Models\ModelPayment->getPayment([...], [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 01:12:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `tgl_pembayaran` < IS NULL
+AND `id_rekening_penerima` IS NULL
+GROUP ' at line 8 in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_paym...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_paym...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_paym...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_paym...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(32): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(323): App\Models\ModelPayment->getPayment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(NULL, Array, Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 01:12:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `tgl_pembayaran` < IS NULL
+AND `id_rekening_penerima` IS NULL
+GROUP ' at line 8
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_payment`.`id`, `no_payment`, `nominal_payment`, `tgl_pembayaran`, `tb_payment`.`keterangan` AS `keterangan_payment`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `id_rekening_penerima`, `id_rekening_penerima`, `tb_rekening_penerima`.`id_bank_penerima` as `id_bank_rek_penerima`, `nama_rekening`, `nomor_rekening`, `tb_rekening_penerima`.`keterangan` AS `keterangan_penerima`, `id_bank_penerima`, `id_customer`, `nama_cstmr`, `nama_usaha`, `atas_nama`, `rekening`, `alias`
+FROM `tb_payment`
+JOIN `invoice_payment` ON `invoice_payment`.`id_payment` = `tb_payment`.`id`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+JOIN `tb_bank` ON `tb_bank`.`id` = `tb_customer`.`id_bank`
+JOIN `tb_rekening_penerima` ON `tb_rekening_penerima`.`id` = `tb_payment`.`id_rekening_penerima`
+WHERE `tgl_pembayaran` > IS NULL
+AND `tgl_pembayaran` < IS NULL
+AND `id_rekening_penerima` IS NULL
+GROUP BY `tb_payment`.`id`, `tb_customer`.`id`', [], false)
+ 2 APPPATH\Models\ModelPayment.php(32): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(323): App\Models\ModelPayment->getPayment([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(null, [...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 01:16:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\formlaporan.php on line 59.
+ 1 APPPATH\Views\laporan\formlaporan.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\formlaporan.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\formlaporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/formlaporan', [], true)
+ 5 APPPATH\Controllers\AJAX\Payment.php(323): view('laporan/formlaporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(null, null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 01:18:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 330.
+ 1 APPPATH\Controllers\AJAX\Payment.php(330): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 330)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 01:32:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 327.
+ 1 APPPATH\Controllers\AJAX\Payment.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 327)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 01:33:24 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 327.
+ 1 APPPATH\Controllers\AJAX\Payment.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 327)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 01:50:31 --> mysqli_sql_exception: Incorrect DATE value: 'Sat Apr 01 2023 08:00:00 GMT 0800 (Central Indonesia Time)' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_paym...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_paym...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_paym...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_paym...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(32): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(317): App\Models\ModelPayment->getPayment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(Array, Array, Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 01:50:31 --> Incorrect DATE value: 'Sat Apr 01 2023 08:00:00 GMT 0800 (Central Indonesia Time)'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_payment`.`id`, `no_payment`, `nominal_payment`, `tgl_pembayaran`, `tb_payment`.`keterangan` AS `keterangan_payment`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `id_rekening_penerima`, `id_rekening_penerima`, `tb_rekening_penerima`.`id_bank_penerima` as `id_bank_rek_penerima`, `nama_rekening`, `nomor_rekening`, `tb_rekening_penerima`.`keterangan` AS `keterangan_penerima`, `id_bank_penerima`, `id_customer`, `nama_cstmr`, `nama_usaha`, `atas_nama`, `rekening`, `alias`
+FROM `tb_payment`
+JOIN `invoice_payment` ON `invoice_payment`.`id_payment` = `tb_payment`.`id`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+JOIN `tb_bank` ON `tb_bank`.`id` = `tb_customer`.`id_bank`
+JOIN `tb_rekening_penerima` ON `tb_rekening_penerima`.`id` = `tb_payment`.`id_rekening_penerima`
+WHERE `tgl_pembayaran` >= :tgl_pembayaran:
+AND `tgl_pembayaran` <= :tgl_pembayaran.1:
+AND `id_rekening_penerima` = :id_rekening_penerima:
+GROUP BY `tb_payment`.`id`, `tb_customer`.`id`', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(32): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(317): App\Models\ModelPayment->getPayment([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment([...], [...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 01:50:40 --> mysqli_sql_exception: Incorrect DATE value: 'Sat Apr 01 2023 08:00:00 GMT 0800 (Central Indonesia Time)' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_paym...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_paym...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_paym...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_paym...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(32): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(317): App\Models\ModelPayment->getPayment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(Array, Array, Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 01:50:40 --> Incorrect DATE value: 'Sat Apr 01 2023 08:00:00 GMT 0800 (Central Indonesia Time)'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_payment`.`id`, `no_payment`, `nominal_payment`, `tgl_pembayaran`, `tb_payment`.`keterangan` AS `keterangan_payment`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `id_rekening_penerima`, `id_rekening_penerima`, `tb_rekening_penerima`.`id_bank_penerima` as `id_bank_rek_penerima`, `nama_rekening`, `nomor_rekening`, `tb_rekening_penerima`.`keterangan` AS `keterangan_penerima`, `id_bank_penerima`, `id_customer`, `nama_cstmr`, `nama_usaha`, `atas_nama`, `rekening`, `alias`
+FROM `tb_payment`
+JOIN `invoice_payment` ON `invoice_payment`.`id_payment` = `tb_payment`.`id`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+JOIN `tb_bank` ON `tb_bank`.`id` = `tb_customer`.`id_bank`
+JOIN `tb_rekening_penerima` ON `tb_rekening_penerima`.`id` = `tb_payment`.`id_rekening_penerima`
+WHERE `tgl_pembayaran` >= :tgl_pembayaran:
+AND `tgl_pembayaran` <= :tgl_pembayaran.1:
+AND `id_rekening_penerima` = :id_rekening_penerima:
+GROUP BY `tb_payment`.`id`, `tb_customer`.`id`', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(32): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(317): App\Models\ModelPayment->getPayment([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment([...], [...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 01:50:50 --> mysqli_sql_exception: Incorrect DATE value: 'Sat Apr 01 2023 08:00:00 GMT 0800 (Central Indonesia Time)' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_paym...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_paym...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_paym...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_paym...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(32): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(317): App\Models\ModelPayment->getPayment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(Array, Array, Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 01:50:50 --> Incorrect DATE value: 'Sat Apr 01 2023 08:00:00 GMT 0800 (Central Indonesia Time)'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_payment`.`id`, `no_payment`, `nominal_payment`, `tgl_pembayaran`, `tb_payment`.`keterangan` AS `keterangan_payment`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `id_rekening_penerima`, `id_rekening_penerima`, `tb_rekening_penerima`.`id_bank_penerima` as `id_bank_rek_penerima`, `nama_rekening`, `nomor_rekening`, `tb_rekening_penerima`.`keterangan` AS `keterangan_penerima`, `id_bank_penerima`, `id_customer`, `nama_cstmr`, `nama_usaha`, `atas_nama`, `rekening`, `alias`
+FROM `tb_payment`
+JOIN `invoice_payment` ON `invoice_payment`.`id_payment` = `tb_payment`.`id`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+JOIN `tb_bank` ON `tb_bank`.`id` = `tb_customer`.`id_bank`
+JOIN `tb_rekening_penerima` ON `tb_rekening_penerima`.`id` = `tb_payment`.`id_rekening_penerima`
+WHERE `tgl_pembayaran` >= :tgl_pembayaran:
+AND `tgl_pembayaran` <= :tgl_pembayaran.1:
+AND `id_rekening_penerima` = :id_rekening_penerima:
+GROUP BY `tb_payment`.`id`, `tb_customer`.`id`', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(32): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(317): App\Models\ModelPayment->getPayment([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment([...], [...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 02:14:29 --> Array to string conversion
+in APPPATH\Controllers\AJAX\Payment.php on line 334.
+ 1 APPPATH\Controllers\AJAX\Payment.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AJAX\\Payment.php', 334)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(null, [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 02:15:22 --> Array to string conversion
+in APPPATH\Controllers\AJAX\Payment.php on line 334.
+ 1 APPPATH\Controllers\AJAX\Payment.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AJAX\\Payment.php', 334)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(null, [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 02:15:38 --> Array to string conversion
+in APPPATH\Controllers\AJAX\Payment.php on line 334.
+ 1 APPPATH\Controllers\AJAX\Payment.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AJAX\\Payment.php', 334)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(null, [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 02:18:34 --> Array to string conversion
+in APPPATH\Controllers\AJAX\Payment.php on line 341.
+ 1 APPPATH\Controllers\AJAX\Payment.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AJAX\\Payment.php', 341)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(null, [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 02:37:20 --> Cannot access offset of type string on string
+in APPPATH\Views\laporan\formlaporan.php on line 59.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/formlaporan', [], true)
+ 4 APPPATH\Controllers\AJAX\Payment.php(334): view('laporan/formlaporan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment([...], null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 02:38:00 --> Cannot access offset of type string on string
+in APPPATH\Views\laporan\formlaporan.php on line 59.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/formlaporan', [], true)
+ 4 APPPATH\Controllers\AJAX\Payment.php(334): view('laporan/formlaporan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment([...], null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 02:38:12 --> Cannot access offset of type string on string
+in APPPATH\Views\laporan\formlaporan.php on line 60.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/formlaporan', [], true)
+ 4 APPPATH\Controllers\AJAX\Payment.php(334): view('laporan/formlaporan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment([...], null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 02:53:29 --> Array to string conversion
+in APPPATH\Views\laporan\formlaporan.php on line 47.
+ 1 APPPATH\Views\laporan\formlaporan.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\laporan\\formlaporan.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\formlaporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/formlaporan', [], true)
+ 5 APPPATH\Controllers\AJAX\Payment.php(343): view('laporan/formlaporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment([...], 'undefined', 'undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 02:54:02 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\laporan\formlaporan.php on line 46.
+ 1 APPPATH\Views\laporan\formlaporan.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\laporan\\formlaporan.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\formlaporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/formlaporan', [], true)
+ 5 APPPATH\Controllers\AJAX\Payment.php(343): view('laporan/formlaporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->cetakPayment(null, 'undefined', 'undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 04:13:51 --> Undefined array key "verifikasi"
+in APPPATH\Controllers\AJAX\Payment.php on line 129.
+ 1 APPPATH\Controllers\AJAX\Payment.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "verifikasi"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 04:17:38 --> "required " is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 320.
+ 1 SYSTEMPATH\Validation\Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+ 2 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('keterangan', 'keterangan', '0', [...], [...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(132): CodeIgniter\Validation\Validation->run([...], 'paymenttextupdate')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->updateData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 05:29:56 --> mysqli_sql_exception: Unknown column 'id_rekeng_penerima' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(177): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(204): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'single')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 05:29:56 --> Unknown column 'id_rekeng_penerima' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`nominal_payment`, `tgl_pembayaran`, `verifikasi`, `id_rekeng_penerima`) VALUES (:nominal_payment:, :tgl_pembayaran:, :verifikasi:, :id_rekeng_penerima:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(177): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(204): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'single')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 05:45:10 --> mysqli_sql_exception: Duplicate entry '444' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(177): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(204): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'single')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 05:45:10 --> Duplicate entry '444' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `verifikasi`, `id_rekening_penerima`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :verifikasi:, :id_rekening_penerima:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(177): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(204): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'single')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 05:45:12 --> mysqli_sql_exception: Duplicate entry '444' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(177): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(204): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'single')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 05:45:12 --> Duplicate entry '444' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `verifikasi`, `id_rekening_penerima`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :verifikasi:, :id_rekening_penerima:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(177): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(204): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'single')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 06:00:30 --> mysqli_sql_exception: Unknown column 'tb_customer.id' in 'group statement' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(nomi...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(nomi...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(nomi...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(nomi...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(28): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(19): App\Models\ModelLaporan->getLaporanSum(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 06:00:30 --> Unknown column 'tb_customer.id' in 'group statement'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(nominal_payment)
+FROM `tb_payment`
+JOIN `invoice_payment` ON `invoice_payment`.`id_payment` = `tb_payment`.`id`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+JOIN `tb_rekening_penerima` ON `tb_rekening_penerima`.`id` = `tb_payment`.`id_rekening_penerima`
+WHERE `tgl_pembayaran` >= :tgl_pembayaran:
+AND `tgl_pembayaran` <= :tgl_pembayaran.1:
+AND `id_rekening_penerima` = :id_rekening_penerima:
+GROUP BY `tb_payment`.`id`, `tb_customer`.`id`', [...], false)
+ 2 APPPATH\Models\ModelLaporan.php(28): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Laporan.php(19): App\Models\ModelLaporan->getLaporanSum([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 06:02:53 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_payment.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_paym...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_paym...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_paym...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_paym...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(27): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(19): App\Models\ModelLaporan->getLaporanSum(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 06:02:53 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_payment.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_payment`.`id`, SUM(nominal_payment)
+FROM `tb_payment`
+JOIN `invoice_payment` ON `invoice_payment`.`id_payment` = `tb_payment`.`id`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+JOIN `tb_rekening_penerima` ON `tb_rekening_penerima`.`id` = `tb_payment`.`id_rekening_penerima`
+WHERE `tgl_pembayaran` >= :tgl_pembayaran:
+AND `tgl_pembayaran` <= :tgl_pembayaran.1:
+AND `id_rekening_penerima` = :id_rekening_penerima:
+GROUP BY `tb_payment`.`id_rekening_penerima`', [...], false)
+ 2 APPPATH\Models\ModelLaporan.php(27): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Laporan.php(19): App\Models\ModelLaporan->getLaporanSum([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 06:06:28 --> mysqli_sql_exception: Unknown column 'invoice_payment.id_invoice' in 'on clause' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_paym...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_paym...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_paym...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_paym...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(27): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(19): App\Models\ModelLaporan->getLaporanSum(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 06:06:28 --> Unknown column 'invoice_payment.id_invoice' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_payment`.`id`, `id_rekening_penerima`, `nominal_payment`
+FROM `tb_payment`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+JOIN `tb_rekening_penerima` ON `tb_rekening_penerima`.`id` = `tb_payment`.`id_rekening_penerima`
+WHERE `tgl_pembayaran` >= :tgl_pembayaran:
+AND `tgl_pembayaran` <= :tgl_pembayaran.1:
+AND `id_rekening_penerima` = :id_rekening_penerima:', [...], false)
+ 2 APPPATH\Models\ModelLaporan.php(27): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Laporan.php(19): App\Models\ModelLaporan->getLaporanSum([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 06:08:36 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Laporan.php(19): CodeIgniter\Model->__call('getLaporanSum', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 06:12:03 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_payment.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_paym...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_paym...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_paym...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_paym...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(19): App\Models\ModelLaporan->getLaporanSum(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 06:12:03 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_payment.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_payment`.`id`, `id_rekening_penerima`, `nominal_payment`
+FROM `tb_payment`
+GROUP BY `tb_payment`.`id_rekening_penerima`', [], false)
+ 2 APPPATH\Models\ModelLaporan.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Laporan.php(19): App\Models\ModelLaporan->getLaporanSum([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 06:14:14 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_payment.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_paym...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_paym...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_paym...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_paym...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(28): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(19): App\Models\ModelLaporan->getLaporanSum(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 06:14:14 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_payment.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_payment`.`id`, `id_rekening_penerima`, `nominal_payment`
+FROM `tb_payment`
+JOIN `invoice_payment` ON `invoice_payment`.`id_payment` = `tb_payment`.`id`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+JOIN `tb_rekening_penerima` ON `tb_rekening_penerima`.`id` = `tb_payment`.`id_rekening_penerima`
+WHERE `tgl_pembayaran` >= :tgl_pembayaran:
+AND `tgl_pembayaran` <= :tgl_pembayaran.1:
+AND `id_rekening_penerima` = :id_rekening_penerima:
+GROUP BY `tb_payment`.`id_rekening_penerima`', [...], false)
+ 2 APPPATH\Models\ModelLaporan.php(28): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Laporan.php(19): App\Models\ModelLaporan->getLaporanSum([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 06:14:20 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_payment.nominal_payment' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_reke...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_reke...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_reke...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_reke...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(28): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(19): App\Models\ModelLaporan->getLaporanSum(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 06:14:20 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_payment.nominal_payment' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_rekening_penerima`, `nominal_payment`
+FROM `tb_payment`
+JOIN `invoice_payment` ON `invoice_payment`.`id_payment` = `tb_payment`.`id`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+JOIN `tb_rekening_penerima` ON `tb_rekening_penerima`.`id` = `tb_payment`.`id_rekening_penerima`
+WHERE `tgl_pembayaran` >= :tgl_pembayaran:
+AND `tgl_pembayaran` <= :tgl_pembayaran.1:
+AND `id_rekening_penerima` = :id_rekening_penerima:
+GROUP BY `tb_payment`.`id_rekening_penerima`', [...], false)
+ 2 APPPATH\Models\ModelLaporan.php(28): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Laporan.php(19): App\Models\ModelLaporan->getLaporanSum([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 06:16:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `tgl_pembayaran` < IS NULL
+AND `id_rekening_penerima` IS NULL
+GROUP ' at line 3 in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_reke...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_reke...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_reke...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_reke...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(24): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(23): App\Models\ModelLaporan->getLaporanSum(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 06:16:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `tgl_pembayaran` < IS NULL
+AND `id_rekening_penerima` IS NULL
+GROUP ' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_rekening_penerima`, SUM(nominal_payment)
+FROM `tb_payment`
+WHERE `tgl_pembayaran` > IS NULL
+AND `tgl_pembayaran` < IS NULL
+AND `id_rekening_penerima` IS NULL
+GROUP BY `tb_payment`.`id_rekening_penerima`', [], false)
+ 2 APPPATH\Models\ModelLaporan.php(24): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Laporan.php(23): App\Models\ModelLaporan->getLaporanSum([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 06:20:02 --> Undefined variable $query
+in APPPATH\Models\ModelLaporan.php on line 36.
+ 1 APPPATH\Models\ModelLaporan.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Models\\ModelLaporan.php', 36)
+ 2 APPPATH\Controllers\AJAX\Laporan.php(23): App\Models\ModelLaporan->getLaporanSum([...], [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 06:20:18 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'db_piutang.tb_payment.id_rekening_penerima'; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_reke...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_reke...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_reke...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_reke...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(23): App\Models\ModelLaporan->getLaporanSum(NULL, NULL, NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 06:20:18 --> In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'db_piutang.tb_payment.id_rekening_penerima'; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_rekening_penerima`, SUM(nominal_payment)
+FROM `tb_payment`', [], false)
+ 2 APPPATH\Models\ModelLaporan.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Laporan.php(23): App\Models\ModelLaporan->getLaporanSum(null, null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 06:21:00 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'db_piutang.tb_payment.id_rekening_penerima'; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_reke...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_reke...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_reke...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_reke...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(23): App\Models\ModelLaporan->getLaporanSum(NULL, NULL, NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 06:21:00 --> In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'db_piutang.tb_payment.id_rekening_penerima'; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_rekening_penerima`, SUM(nominal_payment)
+FROM `tb_payment`', [], false)
+ 2 APPPATH\Models\ModelLaporan.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Laporan.php(23): App\Models\ModelLaporan->getLaporanSum(null, null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 06:25:00 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'db_piutang.tb_payment.id_rekening_penerima'; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_reke...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_reke...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_reke...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_reke...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(30): App\Models\ModelLaporan->getLaporanSum(NULL, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 06:25:00 --> In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'db_piutang.tb_payment.id_rekening_penerima'; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id_rekening_penerima`, SUM(nominal_payment)
+FROM `tb_payment`
+WHERE `tgl_pembayaran` >= :tgl_pembayaran:
+AND `tgl_pembayaran` <= :tgl_pembayaran.1:', [...], false)
+ 2 APPPATH\Models\ModelLaporan.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Laporan.php(30): App\Models\ModelLaporan->getLaporanSum(null, [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 06:32:39 --> Too few arguments to function App\Controllers\AJAX\Laporan::getLaporanSum(), 0 passed in C:\laragon\www\SIPIUTANG\system\CodeIgniter.php on line 934 and exactly 3 expected
+in APPPATH\Controllers\AJAX\Laporan.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 06:56:10 --> Undefined variable $datefrompayment
+in APPPATH\Controllers\AJAX\Laporan.php on line 43.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datefrompayment', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 06:56:46 --> Undefined variable $datefrominvoice
+in APPPATH\Controllers\AJAX\Laporan.php on line 43.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datefrominvoice', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 06:58:12 --> mysqli_sql_exception: Unknown column 'tgl_pembayaran' in 'where clause' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(nila...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(nila...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(nila...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(nila...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(34): App\Models\ModelLaporan->getLaporanInvoice(Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(NULL, NULL, NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 06:58:12 --> Unknown column 'tgl_pembayaran' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(nilai_invoice) AS sum_nilai_invoice
+FROM `tb_invoice`
+WHERE `tgl_pembayaran` >= :tgl_pembayaran:
+AND `tgl_pembayaran` >= :tgl_pembayaran.1:', [...], false)
+ 2 APPPATH\Models\ModelLaporan.php(56): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Laporan.php(34): App\Models\ModelLaporan->getLaporanInvoice([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 07:00:37 --> Undefined variable $datefrominvoice
+in APPPATH\Controllers\AJAX\Laporan.php on line 34.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datefrominvoice', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 07:31:01 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Laporan.php(37): CodeIgniter\Model->__call('getLaporanSisaRetur', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 07:32:23 --> Undefined variable $datefrominvoice
+in APPPATH\Controllers\AJAX\Laporan.php on line 34.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datefrominvoice', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 07:32:45 --> Undefined variable $datefrominvoice
+in APPPATH\Controllers\AJAX\Laporan.php on line 34.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datefrominvoice', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 07:33:48 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Laporan.php(37): CodeIgniter\Model->__call('getLaporanSisaRetur', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 07:36:36 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\AJAX\Laporan.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 07:37:44 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\AJAX\Laporan.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 07:45:55 --> mysqli_sql_exception: Unknown column 'tgl_invoice' in 'where clause' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(nila...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(nila...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(nila...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(nila...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(94): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(37): App\Models\ModelLaporan->getLaporanRetur(Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(Array, '2023-04-01', '2023-04-20')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 07:45:55 --> Unknown column 'tgl_invoice' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(nilai_retur) AS sum_nilai_retur
+FROM `tb_retur`
+WHERE `tgl_invoice` <= :tgl_invoice:
+AND `tgl_invoice` <= :tgl_invoice.1:', [...], false)
+ 2 APPPATH\Models\ModelLaporan.php(94): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Laporan.php(37): App\Models\ModelLaporan->getLaporanRetur([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], '2023-04-01', '2023-04-20')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 07:46:40 --> mysqli_sql_exception: Unknown column 'tgl_invoice' in 'where clause' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(nila...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(nila...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(nila...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(nila...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(94): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(37): App\Models\ModelLaporan->getLaporanRetur(Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(Array, '2023-04-01', '2023-04-20')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 07:46:40 --> Unknown column 'tgl_invoice' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(nilai_retur) AS sum_nilai_retur
+FROM `tb_retur`
+WHERE `tgl_invoice` <= :tgl_invoice:
+AND `tgl_invoice` <= :tgl_invoice.1:', [...], false)
+ 2 APPPATH\Models\ModelLaporan.php(94): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Laporan.php(37): App\Models\ModelLaporan->getLaporanRetur([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], '2023-04-01', '2023-04-20')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:08:30 --> Undefined variable $datefrompayment
+in APPPATH\Controllers\AJAX\Laporan.php on line 29.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datefrompayment', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:08:34 --> Undefined variable $datefrompayment
+in APPPATH\Controllers\AJAX\Laporan.php on line 29.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datefrompayment', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:08:35 --> Undefined variable $datefrompayment
+in APPPATH\Controllers\AJAX\Laporan.php on line 29.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datefrompayment', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:08:37 --> Undefined variable $datefrompayment
+in APPPATH\Controllers\AJAX\Laporan.php on line 29.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datefrompayment', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:08:37 --> Undefined variable $datefrompayment
+in APPPATH\Controllers\AJAX\Laporan.php on line 29.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datefrompayment', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:09:32 --> Undefined variable $datefrompayment
+in APPPATH\Controllers\AJAX\Laporan.php on line 29.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datefrompayment', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:10:35 --> Undefined variable $datefrompayment
+in APPPATH\Controllers\AJAX\Laporan.php on line 29.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datefrompayment', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:11:57 --> Undefined variable $datetopayment
+in APPPATH\Controllers\AJAX\Laporan.php on line 31.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datetopayment', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:12:10 --> Undefined variable $datefrominvoice
+in APPPATH\Controllers\AJAX\Laporan.php on line 33.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datefrominvoice', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-04-10 08:37:08 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Controllers\AJAX\Laporan.php on line 47.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(47): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-04-10 08:37:08 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Controllers\AJAX\Laporan.php on line 47.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(47): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-04-10 08:37:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Controllers\AJAX\Laporan.php on line 47.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(47): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-04-10 08:37:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Controllers\AJAX\Laporan.php on line 47.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(47): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:37:14 --> Undefined array key 0
+in APPPATH\Controllers\AJAX\Laporan.php on line 47.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], '2023-04-01', '2023-04-03')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:37:50 --> Undefined array key 0
+in APPPATH\Controllers\AJAX\Laporan.php on line 47.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], '2023-04-01', '2023-04-27')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:37:55 --> Undefined array key 0
+in APPPATH\Controllers\AJAX\Laporan.php on line 47.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], '2023-04-01', '2023-04-27')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-10 08:38:48 --> mysqli_sql_exception: Incorrect DATE value: '2023-04-31' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_reke...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_reke...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_reke...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_reke...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(26): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Laporan.php(38): App\Models\ModelLaporan->getLaporanSumPayment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum(Array, '2023-04-01', '2023-04-31')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-10 08:38:48 --> Incorrect DATE value: '2023-04-31'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_rekening_penerima`, SUM(nominal_payment) AS sum_nominal_payment
+FROM `tb_payment`
+WHERE `tgl_pembayaran` >= :tgl_pembayaran:
+AND `tgl_pembayaran` <= :tgl_pembayaran.1:
+AND `id_rekening_penerima` = :id_rekening_penerima:
+GROUP BY `tb_payment`.`id_rekening_penerima`', [...], false)
+ 2 APPPATH\Models\ModelLaporan.php(26): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Laporan.php(38): App\Models\ModelLaporan->getLaporanSumPayment([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], '2023-04-01', '2023-04-31')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-04-10 08:43:22 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Controllers\AJAX\Laporan.php on line 48.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(48): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-04-10 08:43:22 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Controllers\AJAX\Laporan.php on line 48.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(48): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:43:39 --> Undefined array key 0
+in APPPATH\Controllers\AJAX\Laporan.php on line 48.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], '2023-04-01', '2023-04-13')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:44:32 --> Undefined array key 0
+in APPPATH\Controllers\AJAX\Laporan.php on line 48.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], '2023-04-01', '2023-04-13')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-10 08:45:19 --> Undefined array key 0
+in APPPATH\Controllers\AJAX\Laporan.php on line 48.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AJAX\\Laporan.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], '2023-03-29', '2023-04-11')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-04-10 08:45:53 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Controllers\AJAX\Laporan.php on line 46.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(46): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], '2023-04-06', '2023-04-12')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-04-10 08:45:53 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Controllers\AJAX\Laporan.php on line 47.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(47): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], '2023-04-06', '2023-04-12')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-04-10 08:45:53 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Controllers\AJAX\Laporan.php on line 51.
+ 1 APPPATH\Controllers\AJAX\Laporan.php(51): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Laporan->getLaporanSum([...], '2023-04-06', '2023-04-12')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

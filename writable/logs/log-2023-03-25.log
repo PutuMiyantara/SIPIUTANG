@@ -1,0 +1,838 @@
+ERROR - 2023-03-25 07:11:45 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.no_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `no_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `no_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `no_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `no_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(177): App\Models\ModelInvoice->getDetailPiutangInvoice(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailInvoice(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 07:11:45 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.no_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `no_invoice`, `nilai_invoice`, `sisa_hutang`, `tgl_invoice`, `jth_tmpo`, `status_piutang`, `sisa_hutang_ekspedisi`, `id_customer`, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:
+GROUP BY `id_customer`, `id_invoice_ekspedisi`', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Piutang.php(177): App\Models\ModelInvoice->getDetailPiutangInvoice([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailInvoice([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 07:12:57 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.no_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `no_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `no_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `no_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `no_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(177): App\Models\ModelInvoice->getDetailPiutangInvoice(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailInvoice(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 07:12:57 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.no_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `no_invoice`, `nilai_invoice`, `sisa_hutang`, `tgl_invoice`, `jth_tmpo`, `status_piutang`, `sisa_hutang_ekspedisi`, `id_customer`, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:
+GROUP BY `id_customer`, `id_invoice_ekspedisi`', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Piutang.php(177): App\Models\ModelInvoice->getDetailPiutangInvoice([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailInvoice([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 07:17:29 --> mysqli_sql_exception: Unknown column 'id_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(62): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(177): App\Models\ModelInvoice->getDetailPiutangInvoice(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailInvoice(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 07:17:29 --> Unknown column 'id_invoice' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_invoice`, `no_invoice`, `id_customer`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(62): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Piutang.php(177): App\Models\ModelInvoice->getDetailPiutangInvoice([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailInvoice([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 07:17:36 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `n...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(62): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(177): App\Models\ModelInvoice->getDetailPiutangInvoice(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailInvoice(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 07:17:36 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `no_invoice`, `id_customer`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(62): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Piutang.php(177): App\Models\ModelInvoice->getDetailPiutangInvoice([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailInvoice([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 07:25:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')ekspedisi = 1' at line 3 in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(177): App\Models\ModelInvoice->getDetailPiutangInvoice(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailInvoice(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 07:25:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')ekspedisi = 1' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_invoice`
+WHERE id_invoice_)ekspedisi = :id_invoice_)ekspedisi:', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Piutang.php(177): App\Models\ModelInvoice->getDetailPiutangInvoice([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailInvoice([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-25 07:33:41 --> Undefined property: stdClass::$id_invoice_ekspedisi
+in APPPATH\Controllers\AJAX\Piutang.php on line 55.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_invoice_ekspedisi', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index(null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:18:25 --> mysqli_sql_exception: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_customer.nama_usaha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere('6')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutang('6')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('6')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:18:25 --> Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_customer.nama_usaha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 6 IS NULL
+GROUP BY `id_customer`, `id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere('6')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutang('6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('6')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:18:41 --> mysqli_sql_exception: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_customer.nama_usaha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere('6')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutang('6')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('6')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:18:41 --> Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_customer.nama_usaha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 6 IS NULL
+GROUP BY `id_customer`, `id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere('6')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutang('6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('6')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:19:53 --> mysqli_sql_exception: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_customer.nama_usaha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(81): CodeIgniter\Database\BaseBuilder->getWhere('5')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutang('5')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:19:53 --> Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_customer.nama_usaha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 5 IS NULL
+GROUP BY `id_customer`, `id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(81): CodeIgniter\Database\BaseBuilder->getWhere('5')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutang('5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:20:25 --> mysqli_sql_exception: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_customer.nama_usaha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(80): CodeIgniter\Database\BaseBuilder->getWhere('5')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutang('5')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:20:25 --> Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_customer.nama_usaha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 5 IS NULL
+GROUP BY `id_customer`, `id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(80): CodeIgniter\Database\BaseBuilder->getWhere('5')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutang('5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:20:53 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere('5')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:20:53 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 5 IS NULL
+GROUP BY `id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere('5')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:21:14 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'db_piutang.tb_invoice.id_customer'; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:21:14 --> In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'db_piutang.tb_invoice.id_customer'; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 5 IS NULL', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:22:03 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:22:03 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 5 IS NULL
+GROUP BY `id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:24:06 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:24:06 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 5 IS NULL
+GROUP BY `id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:24:18 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_cust...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_cust...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_cust...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_cust...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:24:18 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 5 IS NULL
+GROUP BY `id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:24:35 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_cust...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_cust...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_cust...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_cust...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:24:35 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_customer`, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 5 IS NULL
+GROUP BY `id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:24:58 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_cust...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_cust...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_cust...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_cust...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:24:58 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_customer`, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 5 IS NULL
+GROUP BY `id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:25:15 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(62): CodeIgniter\Database\BaseBuilder->getWhere('5')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:25:15 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 5 IS NULL
+GROUP BY `id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(62): CodeIgniter\Database\BaseBuilder->getWhere('5')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:25:59 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:25:59 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id_customer' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 5 IS NULL
+GROUP BY `id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('5')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:27:37 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'db_piutang.tb_invoice.id_customer'; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('6')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('6')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('6')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:27:37 --> In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'db_piutang.tb_invoice.id_customer'; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE 6 IS NULL', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere('6')
+ 3 APPPATH\Controllers\AJAX\Piutang.php(128): App\Models\ModelInvoice->getHutangDetail('6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail('6')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:33:25 --> mysqli_sql_exception: Unknown column 'nama_usaha' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(62): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(130): App\Models\ModelInvoice->getHutangDetail(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:33:25 --> Unknown column 'nama_usaha' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:
+GROUP BY `id_customer`, `id_invoice_ekspedisi`', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(62): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Piutang.php(130): App\Models\ModelInvoice->getHutangDetail([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 08:34:42 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #9 of SELECT list contains nonaggregated column 'db_piutang.tb_invoice.id_invoice_ekspedisi'; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(130): App\Models\ModelInvoice->getHutangDetail(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 08:34:42 --> In aggregated query without GROUP BY, expression #9 of SELECT list contains nonaggregated column 'db_piutang.tb_invoice.id_invoice_ekspedisi'; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(63): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Piutang.php(130): App\Models\ModelInvoice->getHutangDetail([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-25 08:58:04 --> Too few arguments to function App\Models\ModelInvoice::getDetailHutang(), 1 passed in C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php on line 171 and exactly 2 expected
+in APPPATH\Models\ModelInvoice.php on line 54.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(171): App\Models\ModelInvoice->getDetailHutang([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-25 08:58:34 --> Too few arguments to function App\Models\ModelInvoice::getDetailHutang(), 1 passed in C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php on line 171 and exactly 2 expected
+in APPPATH\Models\ModelInvoice.php on line 54.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(171): App\Models\ModelInvoice->getDetailHutang([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-25 08:58:58 --> Too few arguments to function App\Models\ModelInvoice::getDetailHutang(), 1 passed in C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php on line 171 and exactly 2 expected
+in APPPATH\Models\ModelInvoice.php on line 54.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(171): App\Models\ModelInvoice->getDetailHutang([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-25 08:59:45 --> Undefined property: stdClass::$sisa_hutang_ekspedisi
+in APPPATH\Controllers\AJAX\Piutang.php on line 136.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sisa_hutang_ekspedisi', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 136)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-25 09:01:17 --> Undefined property: stdClass::$sisa_hutang_ekspedisi
+in APPPATH\Controllers\AJAX\Piutang.php on line 136.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sisa_hutang_ekspedisi', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 136)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-25 09:05:11 --> Undefined variable $builder
+in APPPATH\Models\ModelInvoice.php on line 61.
+ 1 APPPATH\Models\ModelInvoice.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', 'APPPATH\\Models\\ModelInvoice.php', 61)
+ 2 APPPATH\Controllers\AJAX\Piutang.php(133): App\Models\ModelInvoice->getDetailHutang([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-25 09:07:01 --> CodeIgniter\Database\BaseBuilder::getWhere(): Argument #2 ($limit) must be of type ?int, array given, called in C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php on line 60
+in SYSTEMPATH\Database\BaseBuilder.php on line 1737.
+ 1 APPPATH\Models\ModelInvoice.php(60): CodeIgniter\Database\BaseBuilder->getWhere([...], [...])
+ 2 APPPATH\Controllers\AJAX\Piutang.php(133): App\Models\ModelInvoice->getDetailHutang([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 09:54:12 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(141): App\Models\ModelInvoice->getDetailHutang(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang('5', 'null')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 09:54:12 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `nama_cstmr`
+FROM `tb_invoice`
+LEFT JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:
+GROUP BY `id_customer`, `id_invoice_ekspedisi`', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Piutang.php(141): App\Models\ModelInvoice->getDetailHutang([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang('5', 'null')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 09:54:35 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(141): App\Models\ModelInvoice->getDetailHutang(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang('5', 'null')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 09:54:35 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `nama_cstmr`, SUM(sisa_hutang) as hutang_invoice
+FROM `tb_invoice`
+LEFT JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:
+GROUP BY `id_customer`, `id_invoice_ekspedisi`', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Piutang.php(141): App\Models\ModelInvoice->getDetailHutang([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang('5', 'null')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 09:55:03 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(141): App\Models\ModelInvoice->getDetailHutang(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang('5', 'null')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 09:55:03 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `nama_cstmr`, SUM(sisa_hutang) as hutang_invoice, COUNT(sisa_hutang_ekspedisi) AS jmlh_data
+FROM `tb_invoice`
+LEFT JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:
+GROUP BY `id_customer`, `id_invoice_ekspedisi`', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Piutang.php(141): App\Models\ModelInvoice->getDetailHutang([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang('5', 'null')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 09:55:37 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(141): App\Models\ModelInvoice->getDetailHutang(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang('5', 'null')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 09:55:37 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `nama_cstmr`, SUM(sisa_hutang) as hutang_invoice, COUNT(sisa_hutang_ekspedisi) AS jmlh_data
+FROM `tb_invoice`
+LEFT JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:
+GROUP BY `id_customer`, `id_invoice_ekspedisi`', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Piutang.php(141): App\Models\ModelInvoice->getDetailHutang([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang('5', 'null')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 09:56:10 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `n...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(141): App\Models\ModelInvoice->getDetailHutang(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang('5', 'null')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 09:56:10 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `no_invoice`, `nama_cstmr`, SUM(sisa_hutang) as hutang_invoice, COUNT(sisa_hutang_ekspedisi) AS jmlh_data
+FROM `tb_invoice`
+LEFT JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:
+GROUP BY `id_customer`, `id_invoice_ekspedisi`', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(64): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Piutang.php(141): App\Models\ModelInvoice->getDetailHutang([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang('5', 'null')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-25 09:56:33 --> mysqli_sql_exception: Unknown column '//' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(65): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(141): App\Models\ModelInvoice->getDetailHutang(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang('5', 'null')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-25 09:56:33 --> Unknown column '//' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `//` `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data, `id_invoice_ekspedisi`
+FROM `tb_invoice`
+LEFT JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:
+GROUP BY `id_customer`, `id_invoice_ekspedisi`', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(65): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Piutang.php(141): App\Models\ModelInvoice->getDetailHutang([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang('5', 'null')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

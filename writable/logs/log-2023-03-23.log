@@ -1,0 +1,358 @@
+ERROR - 2023-03-23 00:55:36 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_piutang', 3306, '', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#3 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#5 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2023-03-23 00:55:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+GROUP BY `id_customer`', [], false)
+ 3 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-23 00:55:41 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_piutang', 3306, '', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelCustomer.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Customer.php(13): App\Models\ModelCustomer->getCustomer(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Customer->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Customer))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\SIPIUTANG\app\Models\ModelCustomer.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Customer.php(13): App\Models\ModelCustomer->getCustomer(NULL)
+#5 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Customer->index()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Customer))
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2023-03-23 00:55:41 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_customer`', [], false)
+ 3 APPPATH\Models\ModelCustomer.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\AJAX\Customer.php(13): App\Models\ModelCustomer->getCustomer(null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Customer->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Customer))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-23 00:55:45 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_piutang', 3306, '', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#3 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(NULL)
+#5 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2023-03-23 00:55:45 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice_ekspedisi`.`id`, `no_invoice_ekspedisi`, `banyak_barang`, `nilai_invoice_ekspedisi`, `tgl_pengiriman`, `keterangan`, `status_piutang_ekspedisi`, `sisa_hutang_ekspedisi`, `id_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice_ekspedisi`
+JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`', [], false)
+ 3 APPPATH\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-23 00:57:05 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_piutang', 3306, '', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#3 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#5 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2023-03-23 00:57:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, SUM(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+GROUP BY `id_customer`', [], false)
+ 3 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 00:57:19 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 00:57:32 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 00:57:53 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 00:58:19 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-23 01:03:37 --> mysqli_sql_exception: FUNCTION db_piutang.GetOnlyTheTop does not exist in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-23 01:03:37 --> FUNCTION db_piutang.GetOnlyTheTop does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, GetOnlyTheTop(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-23 01:03:51 --> mysqli_sql_exception: FUNCTION db_piutang.GetOnlyTheTop does not exist in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-23 01:03:51 --> FUNCTION db_piutang.GetOnlyTheTop does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, GetOnlyTheTop(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-23 01:06:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `t' at line 1 in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-23 01:06:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `t' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, FIRST(sisa_hutang_ekspedisi) AS sisa_hutang_ekspedisi, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) AS jmlh_data
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 01:27:15 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 01:27:46 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 01:30:45 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 01:31:01 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 02:14:34 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 02:18:59 --> Undefined variable $jml_data
+in APPPATH\Controllers\AJAX\Piutang.php on line 22.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jml_data', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 03:26:58 --> Undefined property: stdClass::$total_hutang
+in APPPATH\Controllers\AJAX\Piutang.php on line 37.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_hutang', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 03:27:10 --> Undefined property: stdClass::$total_hutang
+in APPPATH\Controllers\AJAX\Piutang.php on line 37.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_hutang', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 03:27:29 --> Undefined property: stdClass::$total_hutang
+in APPPATH\Controllers\AJAX\Piutang.php on line 37.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_hutang', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 03:27:32 --> Undefined property: stdClass::$total_hutang
+in APPPATH\Controllers\AJAX\Piutang.php on line 37.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_hutang', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

@@ -1,0 +1,945 @@
+CRITICAL - 2023-03-17 00:14:36 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 182.
+ 1 APPPATH\Controllers\AJAX\User.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 00:14:39 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 182.
+ 1 APPPATH\Controllers\AJAX\User.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 00:14:39 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 182.
+ 1 APPPATH\Controllers\AJAX\User.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 00:14:39 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 182.
+ 1 APPPATH\Controllers\AJAX\User.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 00:21:34 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(13): CodeIgniter\Model->__call('getInvoice', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 00:25:48 --> mysqli_sql_exception: Unknown column 'no_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-17 00:25:48 --> Unknown column 'no_invoice' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice_ekspedisi`.`id`, `no_invoice`, `tgl_invoice`, `termin`, `jth_tmpo`, `nilai_invoice`, `status_piutang`, `sisa_hutang`, `id_customer`, `id_user`, `nama_cstmr`, `id_bank`, `rekening`, `atas_nama`, `nama_usaha`, `id_customer`
+FROM `tb_invoice_ekspedisi`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice_ekspedisi`.`id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 00:26:32 --> mysqli_sql_exception: Unknown column 'no_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-17 00:26:32 --> Unknown column 'no_invoice' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice_ekspedisi`.`id`, `no_invoice`, `tgl_invoice`, `termin`, `jth_tmpo`, `nilai_invoice`, `status_piutang`, `sisa_hutang`, `id_customer`, `id_user`, `nama_cstmr`, `id_bank`, `rekening`, `atas_nama`, `nama_usaha`, `id_customer`
+FROM `tb_invoice_ekspedisi`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice_ekspedisi`.`id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 00:30:25 --> mysqli_sql_exception: Unknown column 'nama_ekspedisi' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-17 00:30:25 --> Unknown column 'nama_ekspedisi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice_ekspedisi`.`id`, `no_invoice_ekspedisi`, `banyak_barang`, `nilai_invoice_ekspedisi`, `tgl_pengiriman`, `keterangan`, `id_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice_ekspedisi`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice_ekspedisi`.`id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 00:31:08 --> mysqli_sql_exception: Unknown column 'no_telepon_ekspedisi' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-17 00:31:08 --> Unknown column 'no_telepon_ekspedisi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice_ekspedisi`.`id`, `no_invoice_ekspedisi`, `banyak_barang`, `nilai_invoice_ekspedisi`, `tgl_pengiriman`, `keterangan`, `id_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice_ekspedisi`
+JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 02:08:33 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(84): CodeIgniter\Model->__call('getInvoice', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->getDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 02:09:42 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(84): CodeIgniter\Model->__call('getInvoice', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->getDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 02:10:11 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(84): CodeIgniter\Model->__call('getInvoice', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->getDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 02:43:36 --> mysqli_sql_exception: Unknown column 'nama_ekspedisi' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-17 02:43:36 --> Unknown column 'nama_ekspedisi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `tgl_invoice`, `termin`, `jth_tmpo`, `nilai_invoice`, `status_piutang`, `sisa_hutang`, `id_customer`, `id_user`, `nama_cstmr`, `id_bank`, `rekening`, `atas_nama`, `nama_usaha`, `id_customer`, `id_invoice_ekspedisi`, `no_invoice_ekspedisi`, `tgl_pengiriman`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 05:13:26 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 182.
+ 1 APPPATH\Controllers\AJAX\User.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 05:13:45 --> Undefined array key "password"
+in APPPATH\Controllers\AJAX\Invoice.php on line 99.
+ 1 APPPATH\Controllers\AJAX\Invoice.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH\\Controllers\\AJAX\\Invoice.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 05:18:03 --> mysqli_sql_exception: Unknown column 'no_invoice_ekspedisi' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(56): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Invoice.php(98): App\Models\ModelInvoice->updateData(Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->updateData(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-17 05:18:03 --> Unknown column 'no_invoice_ekspedisi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invoice` SET `no_invoice` = :no_invoice:, `nilai_invoice` = :nilai_invoice:, `tgl_invoice` = :tgl_invoice:, `status_piutang` = :status_piutang:, `termin` = :termin:, `jth_tmpo` = :jth_tmpo:, `sisa_hutang` = :sisa_hutang:, `id_customer` = :id_customer:, `no_invoice_ekspedisi` = :no_invoice_ekspedisi:, `nilai_invoice_ekspedisi` = :nilai_invoice_ekspedisi:, `tgl_pengiriman` = :tgl_pengiriman:, `nama_ekspedisi` = :nama_ekspedisi:, `no_telepon_ekspedisi` = :no_telepon_ekspedisi:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(56): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\AJAX\Invoice.php(98): App\Models\ModelInvoice->updateData([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->updateData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 05:19:48 --> mysqli_sql_exception: Unknown column 'nilai_invoice_ekspedisi' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(56): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Invoice.php(98): App\Models\ModelInvoice->updateData(Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->updateData(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-17 05:19:48 --> Unknown column 'nilai_invoice_ekspedisi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invoice` SET `no_invoice` = :no_invoice:, `nilai_invoice` = :nilai_invoice:, `tgl_invoice` = :tgl_invoice:, `status_piutang` = :status_piutang:, `termin` = :termin:, `jth_tmpo` = :jth_tmpo:, `sisa_hutang` = :sisa_hutang:, `id_customer` = :id_customer:, `id_invoice_ekspedisi` = :id_invoice_ekspedisi:, `nilai_invoice_ekspedisi` = :nilai_invoice_ekspedisi:, `tgl_pengiriman` = :tgl_pengiriman:, `nama_ekspedisi` = :nama_ekspedisi:, `no_telepon_ekspedisi` = :no_telepon_ekspedisi:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(56): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\AJAX\Invoice.php(98): App\Models\ModelInvoice->updateData([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->updateData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 05:22:49 --> Undefined array key "jth_tempo"
+in APPPATH\Controllers\AJAX\Invoice.php on line 102.
+ 1 APPPATH\Controllers\AJAX\Invoice.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jth_tempo"', 'APPPATH\\Controllers\\AJAX\\Invoice.php', 102)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 05:32:28 --> A non-numeric value encountered
+in APPPATH\Controllers\AJAX\Invoice.php on line 98.
+ 1 APPPATH\Controllers\AJAX\Invoice.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\AJAX\\Invoice.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 06:51:43 --> Undefined array key "tgl_invoice"
+in APPPATH\Controllers\AJAX\Ekspedisi.php on line 24.
+ 1 APPPATH\Controllers\AJAX\Ekspedisi.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tgl_invoice"', 'APPPATH\\Controllers\\AJAX\\Ekspedisi.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Ekspedisi->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Ekspedisi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 06:59:34 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Ekspedisi.php(53): CodeIgniter\Model->__call('getInvoice', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Ekspedisi->getDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Ekspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 07:02:29 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Ekspedisi.php(53): CodeIgniter\Model->__call('getInvoice', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Ekspedisi->getDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Ekspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 07:03:19 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Ekspedisi.php(53): CodeIgniter\Model->__call('getInvoice', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Ekspedisi->getDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Ekspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 07:05:49 --> Undefined array key "tgl_invoice"
+in APPPATH\Controllers\AJAX\Ekspedisi.php on line 65.
+ 1 APPPATH\Controllers\AJAX\Ekspedisi.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tgl_invoice"', 'APPPATH\\Controllers\\AJAX\\Ekspedisi.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Ekspedisi->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Ekspedisi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 07:48:41 --> syntax error, unexpected token ")"
+in APPPATH\Controllers\AJAX\Piutang.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AJAX\\Piutang.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AJAX\\Piutang')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AJAX\\Piutang')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AJAX\\Piutang', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 07:48:49 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(23): CodeIgniter\Model->__call('getPiutang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 07:50:09 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(24): CodeIgniter\Model->__call('getPiutang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 07:50:12 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(24): CodeIgniter\Model->__call('getPiutang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 07:51:35 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(25): CodeIgniter\Model->__call('getPiutang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 07:52:29 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(24): CodeIgniter\Model->__call('getPiutang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 07:52:59 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(24): CodeIgniter\Model->__call('getPiutang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 07:53:02 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(24): CodeIgniter\Model->__call('getPiutang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 07:53:17 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(24): CodeIgniter\Model->__call('getPiutang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 07:53:19 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(24): CodeIgniter\Model->__call('getPiutang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 08:03:58 --> Trying to access array offset on value of type int
+in APPPATH\Controllers\AJAX\Piutang.php on line 27.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 08:06:41 --> Undefined variable $id_customer
+in APPPATH\Controllers\AJAX\Piutang.php on line 25.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_customer', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 13:04:30 --> mysqli_sql_exception: Column 'no_invoice' in field list is ambiguous in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(NULL)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 13:04:30 --> Column 'no_invoice' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `tgl_invoice`, `termin`, `jth_tmpo`, `nilai_invoice`, `status_piutang`, `sisa_hutang`, `id_customer`, `id_user`, `nama_cstmr`, `id_bank`, `rekening`, `atas_nama`, `nama_usaha`, `id_customer`, `id_invoice_ekspedisi`, `no_invoice_ekspedisi`, `tgl_pengiriman`, `nilai_invoice_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+LEFT JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 13:04:30 --> mysqli_sql_exception: Unknown column 'no_invoice_ekspedisi' in 'field list' in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(NULL)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 13:04:30 --> Unknown column 'no_invoice_ekspedisi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice_ekspedisi`.`id`, `no_invoice_ekspedisi`, `banyak_barang`, `nilai_invoice_ekspedisi`, `tgl_pengiriman`, `keterangan`, `status_piutang_ekspedisi`, `sisa_hutang_ekspedisi`, `id_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice_ekspedisi`
+JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 13:37:07 --> mysqli_sql_exception: Column 'no_invoice' in field list is ambiguous in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(NULL)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 13:37:07 --> Column 'no_invoice' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `tgl_invoice`, `termin`, `jth_tmpo`, `nilai_invoice`, `status_piutang`, `sisa_hutang`, `id_customer`, `id_user`, `nama_cstmr`, `id_bank`, `rekening`, `atas_nama`, `nama_usaha`, `id_customer`, `id_invoice_ekspedisi`, `no_invoice_ekspedisi`, `tgl_pengiriman`, `nilai_invoice_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+LEFT JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 13:37:07 --> mysqli_sql_exception: Unknown column 'no_invoice_ekspedisi' in 'field list' in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(NULL)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 13:37:07 --> Unknown column 'no_invoice_ekspedisi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice_ekspedisi`.`id`, `no_invoice_ekspedisi`, `banyak_barang`, `nilai_invoice_ekspedisi`, `tgl_pengiriman`, `keterangan`, `status_piutang_ekspedisi`, `sisa_hutang_ekspedisi`, `id_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice_ekspedisi`
+JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 13:46:14 --> mysqli_sql_exception: Column 'no_invoice' in field list is ambiguous in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(NULL)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 13:46:14 --> Column 'no_invoice' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `tgl_invoice`, `termin`, `jth_tmpo`, `nilai_invoice`, `status_piutang`, `sisa_hutang`, `id_customer`, `id_user`, `nama_cstmr`, `id_bank`, `rekening`, `atas_nama`, `nama_usaha`, `id_customer`, `id_invoice_ekspedisi`, `no_invoice_ekspedisi`, `tgl_pengiriman`, `nilai_invoice_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+LEFT JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 13:49:20 --> mysqli_sql_exception: Column 'no_invoice' in field list is ambiguous in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(NULL)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 13:49:20 --> Column 'no_invoice' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `tgl_invoice`, `termin`, `jth_tmpo`, `nilai_invoice`, `status_piutang`, `sisa_hutang`, `id_customer`, `id_user`, `nama_cstmr`, `id_bank`, `rekening`, `atas_nama`, `nama_usaha`, `id_customer`, `id_invoice_ekspedisi`, `no_invoice_ekspedisi`, `tgl_pengiriman`, `nilai_invoice_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+LEFT JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 13:49:21 --> mysqli_sql_exception: Unknown column 'no_invoice_ekspedisi' in 'field list' in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(NULL)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 13:49:21 --> Unknown column 'no_invoice_ekspedisi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice_ekspedisi`.`id`, `no_invoice_ekspedisi`, `banyak_barang`, `nilai_invoice_ekspedisi`, `tgl_pengiriman`, `keterangan`, `status_piutang_ekspedisi`, `sisa_hutang_ekspedisi`, `id_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice_ekspedisi`
+JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 13:53:32 --> mysqli_sql_exception: Column 'no_invoice' in field list is ambiguous in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(NULL)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 13:53:32 --> Column 'no_invoice' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `tgl_invoice`, `termin`, `jth_tmpo`, `nilai_invoice`, `status_piutang`, `sisa_hutang`, `id_customer`, `id_user`, `nama_cstmr`, `id_bank`, `rekening`, `atas_nama`, `nama_usaha`, `id_customer`, `id_invoice_ekspedisi`, `no_invoice_ekspedisi`, `tgl_pengiriman`, `nilai_invoice_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 13:57:12 --> mysqli_sql_exception: Unknown column 'nama_ekspedisi' in 'field list' in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(NULL)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 13:57:12 --> Unknown column 'nama_ekspedisi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `tgl_invoice`, `termin`, `jth_tmpo`, `nilai_invoice`, `status_piutang`, `sisa_hutang`, `id_customer`, `id_user`, `nama_cstmr`, `id_bank`, `rekening`, `atas_nama`, `nama_usaha`, `id_customer`, `id_invoice_ekspedisi`, `no_invoice_ekspedisi`, `tgl_pengiriman`, `nilai_invoice_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 13:57:13 --> mysqli_sql_exception: Unknown column 'keterangan' in 'field list' in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(NULL)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 13:57:13 --> Unknown column 'keterangan' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice_ekspedisi`.`id`, `no_invoice_ekspedisi`, `banyak_barang`, `nilai_invoice_ekspedisi`, `tgl_pengiriman`, `keterangan`, `status_piutang_ekspedisi`, `sisa_hutang_ekspedisi`, `id_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice_ekspedisi`
+JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 13:57:24 --> mysqli_sql_exception: Unknown column 'nama_ekspedisi' in 'field list' in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(NULL)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 13:57:24 --> Unknown column 'nama_ekspedisi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `tgl_invoice`, `termin`, `jth_tmpo`, `nilai_invoice`, `status_piutang`, `sisa_hutang`, `id_customer`, `id_user`, `nama_cstmr`, `id_bank`, `rekening`, `atas_nama`, `nama_usaha`, `id_customer`, `id_invoice_ekspedisi`, `no_invoice_ekspedisi`, `tgl_pengiriman`, `nilai_invoice_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Invoice.php(13): App\Models\ModelInvoice->getInvoice(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Invoice->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 13:58:19 --> mysqli_sql_exception: Unknown column 'keterangan' in 'field list' in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(NULL)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 13:58:19 --> Unknown column 'keterangan' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice_ekspedisi`.`id`, `no_invoice_ekspedisi`, `banyak_barang`, `nilai_invoice_ekspedisi`, `tgl_pengiriman`, `keterangan`, `status_piutang_ekspedisi`, `sisa_hutang_ekspedisi`, `id_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice_ekspedisi`
+JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 13:58:51 --> mysqli_sql_exception: Unknown column 'keterangan' in 'field list' in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(NULL)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 13:58:51 --> Unknown column 'keterangan' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice_ekspedisi`.`id`, `no_invoice_ekspedisi`, `banyak_barang`, `nilai_invoice_ekspedisi`, `tgl_pengiriman`, `keterangan`, `status_piutang_ekspedisi`, `sisa_hutang_ekspedisi`, `id_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice_ekspedisi`
+JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(13): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 14:18:42 --> mysqli_sql_exception: Unknown column 'repass' in 'field list' in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_user...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_user...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_user...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_user...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelUser.php(48): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\User.php(203): App\Models\ModelUser->updateData(Array, Array)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData(Array)
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 14:18:42 --> Unknown column 'repass' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_user` SET `username` = :username:, `password` = :password:, `repass` = :repass:, `role` = :role:, `status` = :status:, `nama` = :nama:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelUser.php(48): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\AJAX\User.php(203): App\Models\ModelUser->updateData([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 14:19:41 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(432): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AJAX\User.php(53): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->deleteData()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 14:24:41 --> mysqli_sql_exception: Unknown column 'repass' in 'field list' in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_user...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_user...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_user...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_user...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelUser.php(48): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\User.php(203): App\Models\ModelUser->updateData(Array, Array)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData(Array)
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 14:24:41 --> Unknown column 'repass' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_user` SET `username` = :username:, `password` = :password:, `repass` = :repass:, `role` = :role:, `status` = :status:, `nama` = :nama:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelUser.php(48): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\AJAX\User.php(203): App\Models\ModelUser->updateData([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 14:25:13 --> mysqli_sql_exception: Unknown column 'repass' in 'field list' in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_user...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_user...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_user...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_user...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelUser.php(48): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\User.php(203): App\Models\ModelUser->updateData(Array, Array)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData(Array)
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 14:25:13 --> Unknown column 'repass' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_user` SET `username` = :username:, `password` = :password:, `repass` = :repass:, `role` = :role:, `status` = :status:, `nama` = :nama:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelUser.php(48): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\AJAX\User.php(203): App\Models\ModelUser->updateData([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-17 14:41:46 --> mysqli_sql_exception: Unknown column 'repass' in 'field list' in F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_user...', 0)
+#1 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_user...')
+#2 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_user...')
+#3 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_user...', Array, false)
+#4 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Models\ModelUser.php(48): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 F:\WEBPROJECT\laragon\www\SIPIUTANG\app\Controllers\AJAX\User.php(98): App\Models\ModelUser->updateData(Array, Array)
+#6 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData(Array)
+#7 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+#8 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEBPROJECT\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEBPROJECT\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('F:\\WEBPROJECT\\l...')
+#11 {main}
+CRITICAL - 2023-03-17 14:41:46 --> Unknown column 'repass' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_user` SET `username` = :username:, `password` = :password:, `repass` = :repass:, `role` = :role:, `status` = :status:, `nama` = :nama:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelUser.php(48): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\AJAX\User.php(98): App\Models\ModelUser->updateData([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 15:36:19 --> syntax error, unexpected ''total_hutang'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+in APPPATH\Controllers\AJAX\Piutang.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AJAX\\Piutang.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AJAX\\Piutang')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AJAX\\Piutang')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\AJAX\\Piutang')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AJAX\\Piutang', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 16:07:13 --> array_push() expects parameter 1 to be array, null given
+in APPPATH\Controllers\AJAX\Piutang.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() expects parameter 1 to be array, null given', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 41, [...])
+ 2 APPPATH\Controllers\AJAX\Piutang.php(41): array_push(null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 16:07:44 --> array_push() expects parameter 1 to be array, null given
+in APPPATH\Controllers\AJAX\Piutang.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() expects parameter 1 to be array, null given', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 42, [...])
+ 2 APPPATH\Controllers\AJAX\Piutang.php(42): array_push(null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-17 16:07:47 --> array_push() expects parameter 1 to be array, null given
+in APPPATH\Controllers\AJAX\Piutang.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() expects parameter 1 to be array, null given', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 42, [...])
+ 2 APPPATH\Controllers\AJAX\Piutang.php(42): array_push(null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

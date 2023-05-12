@@ -1,0 +1,915 @@
+CRITICAL - 2023-03-20 06:54:20 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 06:55:21 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 06:55:55 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:00:23 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\AJAX\Piutang.php on line 43.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(43): array_push(null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:10:49 --> Undefined variable $data
+in APPPATH\Controllers\AJAX\Piutang.php on line 37.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:37:28 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:37:42 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:45:42 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:47:06 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:47:36 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:47:51 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:48:04 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:49:07 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:49:25 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:49:32 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:49:47 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:50:16 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:50:25 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:50:47 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:51:20 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:51:36 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:52:28 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:52:29 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:52:29 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('getGroupQuery', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:54:14 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:54:26 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:55:02 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:55:49 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:55:50 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:55:50 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:55:51 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:55:51 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:55:52 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:55:52 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:55:52 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:55:53 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:55:53 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:55:54 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:55:54 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:56:30 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 07:56:52 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): CodeIgniter\Model->__call('testData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 08:02:19 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.sisa_hutang' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `sisa_hu...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sisa_hu...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sisa_hu...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `sisa_hu...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 08:02:19 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.sisa_hutang' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `sisa_hutang`, COUNT("sisa_hutang") AS jumlah
+FROM `tb_invoice`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 08:02:37 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.sisa_hutang' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `sisa_hu...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sisa_hu...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sisa_hu...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `sisa_hu...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 08:02:37 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.sisa_hutang' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `sisa_hutang`
+FROM `tb_invoice`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 08:02:58 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 08:02:58 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_invoice`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 08:03:55 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 08:03:55 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_invoice`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 08:06:20 --> mysqli_sql_exception: Not unique table/alias: 'tb_invoice' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 08:06:20 --> Not unique table/alias: 'tb_invoice'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_invoice`, `tb_invoice`
+WHERE   (
+`id_customer` = :id_customer:
+ )
+AND `sisa_hutang` = :sisa_hutang:', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 08:06:35 --> Undefined variable $builder
+in APPPATH\Models\ModelInvoice.php on line 42.
+ 1 APPPATH\Models\ModelInvoice.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', 'APPPATH\\Models\\ModelInvoice.php', 42)
+ 2 APPPATH\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 08:09:05 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelInvoice.php(43): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 08:09:46 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelInvoice.php(43): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 08:10:22 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelInvoice.php(43): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 08:12:25 --> mysqli_sql_exception: Unknown column 'sia_hutang' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 08:12:25 --> Unknown column 'sia_hutang' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as tb_invoice, sia_hutang
+FROM `tb_invoice`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 08:12:35 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'db_piutang.tb_invoice.sisa_hutang'; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 08:12:35 --> In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'db_piutang.tb_invoice.sisa_hutang'; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as tb_invoice, sisa_hutang
+FROM `tb_invoice`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(48): App\Models\ModelInvoice->testData()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 08:42:56 --> mysqli_sql_exception: Unknown column 'nama_pemilik' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 08:42:56 --> Unknown column 'nama_pemilik' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as sisa_hutang, `id_customer`, SUM(sisa_hutang_ekspedisi) as sisa_hutang_ekspedisi, `nama_usaha`, `nama_pemilik`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) as jml_data_ekspedisi
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 08:43:15 --> mysqli_sql_exception: Unknown column 'nama_pemilik' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 08:43:15 --> Unknown column 'nama_pemilik' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as sisa_hutang, `id_customer`, SUM(sisa_hutang_ekspedisi) as sisa_hutang_ekspedisi, `nama_usaha`, `nama_pemilik`, `telepon`, `atas_nama`, COUNT(sisa_hutang_ekspedisi) as jml_data_ekspedisi
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 08:43:36 --> Undefined property: stdClass::$hutang_ekspedisi
+in APPPATH\Controllers\AJAX\Piutang.php on line 20.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$hutang_ekspedisi', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 08:46:33 --> Undefined property: stdClass::$hutang_ekspedisi
+in APPPATH\Controllers\AJAX\Piutang.php on line 20.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$hutang_ekspedisi', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 08:46:58 --> Undefined property: stdClass::$hutang_ekspedisi
+in APPPATH\Controllers\AJAX\Piutang.php on line 20.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$hutang_ekspedisi', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 08:47:12 --> Undefined property: stdClass::$hutang_invoice
+in APPPATH\Controllers\AJAX\Piutang.php on line 26.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$hutang_invoice', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 08:47:40 --> Undefined property: stdClass::$total_hutang
+in APPPATH\Controllers\AJAX\Piutang.php on line 28.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_hutang', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 08:55:16 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 08:55:44 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 08:58:24 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 08:59:24 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 09:00:02 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 09:00:36 --> mysqli_sql_exception: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.sisa_hutang_ekspedisi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 09:00:36 --> Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.sisa_hutang_ekspedisi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, `sisa_hutang_ekspedisi`, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 09:01:05 --> mysqli_sql_exception: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.sisa_hutang_ekspedisi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 09:01:05 --> Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.sisa_hutang_ekspedisi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, `sisa_hutang_ekspedisi` as `sisa_hutang_ekspedisi`, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 09:01:23 --> mysqli_sql_exception: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.sisa_hutang_ekspedisi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 09:01:23 --> Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.sisa_hutang_ekspedisi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, `sisa_hutang_ekspedisi` as `sisa_hutang_ekspedisi`, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 09:01:57 --> mysqli_sql_exception: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.sisa_hutang_ekspedisi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 09:01:57 --> Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.sisa_hutang_ekspedisi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, `sisa_hutang_ekspedisi` as `sisa_hutang_ekspedisi`, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-20 09:02:40 --> mysqli_sql_exception: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.sisa_hutang_ekspedisi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-20 09:02:40 --> Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.sisa_hutang_ekspedisi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, `sisa_hutang_ekspedisi`, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+GROUP BY `id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(16): App\Models\ModelInvoice->getHutang()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 09:09:25 --> Undefined property: stdClass::$sisa_hutang_ekspedisi
+in APPPATH\Controllers\AJAX\Piutang.php on line 19.
+ 1 APPPATH\Controllers\AJAX\Piutang.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sisa_hutang_ekspedisi', 'APPPATH\\Controllers\\AJAX\\Piutang.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 09:11:40 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 09:12:47 --> Division by zero
+in APPPATH\Controllers\AJAX\Piutang.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

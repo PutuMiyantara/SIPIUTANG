@@ -1,0 +1,550 @@
+ERROR - 2023-03-27 00:22:59 --> mysqli_sql_exception: Expression #7 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.tgl_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(78): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Piutang.php(23): App\Models\ModelInvoice->getHutang(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-27 00:22:59 --> Expression #7 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.tgl_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang) as hutang_invoice, `id_customer`, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`, `tgl_invoice`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+LEFT JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`
+GROUP BY `tb_invoice`.`id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoice.php(78): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Piutang.php(23): App\Models\ModelInvoice->getHutang(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->index(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 00:58:33 --> Too few arguments to function App\Controllers\AJAX\Piutang::getDetailHutang(), 1 passed in C:\laragon\www\SIPIUTANG\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\AJAX\Piutang.php on line 118.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Piutang->getDetailHutang('5')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Piutang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 04:19:16 --> Undefined array key "nominal_payment"
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nominal_payment"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 04:19:20 --> Undefined array key "nominal_payment"
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nominal_payment"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 04:19:20 --> Undefined array key "nominal_payment"
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nominal_payment"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 04:19:50 --> Undefined array key "nominal_payment"
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nominal_payment"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 04:22:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 04:22:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 24.
+ 1 APPPATH\Controllers\AJAX\Payment.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 04:23:47 --> Undefined array key "nominal_payment"
+in APPPATH\Controllers\AJAX\Payment.php on line 24.
+ 1 APPPATH\Controllers\AJAX\Payment.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nominal_payment"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 05:47:34 --> Undefined array key "nominal_payment"
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nominal_payment"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 05:49:02 --> Undefined array key "nominal_payment"
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nominal_payment"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 05:51:08 --> Undefined array key "nominal_payment"
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nominal_payment"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 05:51:46 --> Undefined array key "keterangan"
+in APPPATH\Controllers\AJAX\Payment.php on line 25.
+ 1 APPPATH\Controllers\AJAX\Payment.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "keterangan"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 05:52:39 --> Undefined array key "id_bank_pembayar"
+in APPPATH\Controllers\AJAX\Payment.php on line 27.
+ 1 APPPATH\Controllers\AJAX\Payment.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_bank_pembayar"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 05:53:36 --> Undefined array key "id_bank_pembayar"
+in APPPATH\Controllers\AJAX\Payment.php on line 27.
+ 1 APPPATH\Controllers\AJAX\Payment.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_bank_pembayar"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 05:54:01 --> Undefined array key "id_bank_pembayar"
+in APPPATH\Controllers\AJAX\Payment.php on line 27.
+ 1 APPPATH\Controllers\AJAX\Payment.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_bank_pembayar"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 05:54:39 --> Undefined array key "id_bank_pembayar"
+in APPPATH\Controllers\AJAX\Payment.php on line 27.
+ 1 APPPATH\Controllers\AJAX\Payment.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_bank_pembayar"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 05:56:53 --> Undefined array key "id_bank_pembayar"
+in APPPATH\Controllers\AJAX\Payment.php on line 27.
+ 1 APPPATH\Controllers\AJAX\Payment.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_bank_pembayar"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-27 06:35:07 --> mysqli_sql_exception: Unknown column 'nominal_payment' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(35): App\Models\ModelPayment->payment(NULL, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+ERROR - 2023-03-27 06:37:18 --> mysqli_sql_exception: Unknown column 'nominal_payment' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(35): App\Models\ModelPayment->payment(NULL, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-27 06:39:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::trans_start()
+in APPPATH\Models\ModelPayment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(35): App\Models\ModelPayment->payment(null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 06:39:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::trans_begin()
+in APPPATH\Models\ModelPayment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(35): App\Models\ModelPayment->payment(null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-27 06:47:37 --> mysqli_sql_exception: Unknown column 'nominal_payment' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(35): App\Models\ModelPayment->payment(NULL, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+ERROR - 2023-03-27 06:49:12 --> mysqli_sql_exception: Unknown column 'nominal_payment' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(35): App\Models\ModelPayment->payment(NULL, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+ERROR - 2023-03-27 06:49:41 --> mysqli_sql_exception: Unknown column 'nominal_payment' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(35): App\Models\ModelPayment->payment(NULL, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-27 06:49:41 --> Unknown column 'nominal_payment' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`nominal_payment`, `tgl_pembayaran`, `keterangan`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`) VALUES (:nominal_payment:, :tgl_pembayaran:, :keterangan:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(35): App\Models\ModelPayment->payment(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-27 07:00:11 --> mysqli_sql_exception: Unknown column 'nominal_payment' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(32): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(35): App\Models\ModelPayment->payment(Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-27 07:00:11 --> Unknown column 'nominal_payment' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invoice` SET `nominal_payment` = :nominal_payment:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(32): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(35): App\Models\ModelPayment->payment([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 07:24:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 07:39:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 07:40:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 07:49:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::trans_begin()
+in APPPATH\Models\ModelPayment.php on line 29.
+ 1 APPPATH\Controllers\AJAX\Payment.php(35): App\Models\ModelPayment->payment(null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 08:22:52 --> Undefined variable $dataPaymen
+in APPPATH\Models\ModelPayment.php on line 36.
+ 1 APPPATH\Models\ModelPayment.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataPaymen', 'APPPATH\\Models\\ModelPayment.php', 36)
+ 2 APPPATH\Controllers\AJAX\Payment.php(32): App\Models\ModelPayment->payment([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 08:22:55 --> Undefined variable $dataPaymen
+in APPPATH\Models\ModelPayment.php on line 36.
+ 1 APPPATH\Models\ModelPayment.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataPaymen', 'APPPATH\\Models\\ModelPayment.php', 36)
+ 2 APPPATH\Controllers\AJAX\Payment.php(32): App\Models\ModelPayment->payment([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 09:02:45 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\AJAX\Payment.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 09:03:58 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\AJAX\Payment.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 09:04:45 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\AJAX\Payment.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 09:05:47 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\AJAX\Payment.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 09:06:30 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\AJAX\Payment.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 09:15:29 --> Undefined property: stdClass::$id_payment
+in APPPATH\Controllers\AJAX\Payment.php on line 52.
+ 1 APPPATH\Controllers\AJAX\Payment.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_payment', 'APPPATH\\Controllers\\AJAX\\Payment.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-27 09:16:00 --> mysqli_sql_exception: Unknown column 'id_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(30): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(70): App\Models\ModelPayment->payment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+ERROR - 2023-03-27 09:16:43 --> mysqli_sql_exception: Unknown column 'id_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(30): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(70): App\Models\ModelPayment->payment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+ERROR - 2023-03-27 09:20:43 --> mysqli_sql_exception: Unknown column 'id_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(30): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(70): App\Models\ModelPayment->payment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+ERROR - 2023-03-27 09:20:44 --> mysqli_sql_exception: Unknown column 'id_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(30): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(70): App\Models\ModelPayment->payment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+ERROR - 2023-03-27 09:20:44 --> mysqli_sql_exception: Unknown column 'id_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(30): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(70): App\Models\ModelPayment->payment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+ERROR - 2023-03-27 09:20:44 --> mysqli_sql_exception: Unknown column 'id_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(30): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(70): App\Models\ModelPayment->payment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+ERROR - 2023-03-27 09:20:45 --> mysqli_sql_exception: Unknown column 'id_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(30): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(70): App\Models\ModelPayment->payment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+ERROR - 2023-03-27 09:20:45 --> mysqli_sql_exception: Unknown column 'id_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(30): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(70): App\Models\ModelPayment->payment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-27 09:21:38 --> Undefined variable $dataPayment
+in APPPATH\Controllers\AJAX\Payment.php on line 51.
+ 1 APPPATH\Controllers\AJAX\Payment.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataPayment', 'APPPATH\\Controllers\\AJAX\\Payment.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 09:21:58 --> syntax error, unexpected token "else"
+in APPPATH\Controllers\AJAX\Payment.php on line 72.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AJAX\\Payment.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AJAX\\Payment')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AJAX\\Payment')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AJAX\\Payment', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-27 09:22:32 --> mysqli_sql_exception: Unknown column 'id_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(30): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(70): App\Models\ModelPayment->payment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+ERROR - 2023-03-27 09:23:23 --> mysqli_sql_exception: Unknown column 'id_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(30): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(70): App\Models\ModelPayment->payment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+ERROR - 2023-03-27 09:24:02 --> mysqli_sql_exception: Unknown column 'id_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(30): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(70): App\Models\ModelPayment->payment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}

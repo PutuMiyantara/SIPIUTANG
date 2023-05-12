@@ -1,0 +1,112 @@
+CRITICAL - 2023-03-13 03:15:35 --> Invalid file: "user/tambah.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/tambah.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/tambah', [], true)
+ 3 APPPATH\Controllers\BaseController.php(62): view('user/tambah', [])
+ 4 APPPATH\Controllers\Main\User.php(11): App\Controllers\BaseController->masterView('user/tambah', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 03:15:45 --> Invalid file: "user/tambah.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/tambah.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/tambah', [], true)
+ 3 APPPATH\Controllers\BaseController.php(62): view('user/tambah', [])
+ 4 APPPATH\Controllers\Main\User.php(11): App\Controllers\BaseController->masterView('user/tambah', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 03:44:51 --> Invalid file: "/user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/user.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user', [], true)
+ 3 APPPATH\Controllers\BaseController.php(62): view('/user', [])
+ 4 APPPATH\Controllers\Main\User.php(11): App\Controllers\BaseController->masterView('/user', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 03:45:02 --> Invalid file: "/user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/user.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user', [], true)
+ 3 APPPATH\Controllers\BaseController.php(62): view('/user', [])
+ 4 APPPATH\Controllers\Main\User.php(11): App\Controllers\BaseController->masterView('/user', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 03:45:33 --> Invalid file: "user/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/', [], true)
+ 3 APPPATH\Controllers\BaseController.php(62): view('user/', [])
+ 4 APPPATH\Controllers\Main\User.php(11): App\Controllers\BaseController->masterView('user/', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 03:45:55 --> Invalid file: "user/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/', [], true)
+ 3 APPPATH\Controllers\BaseController.php(62): view('user/', [])
+ 4 APPPATH\Controllers\Main\User.php(11): App\Controllers\BaseController->masterView('user/', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 03:46:19 --> Invalid file: "user/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/', [], true)
+ 3 APPPATH\Controllers\BaseController.php(62): view('user/', [])
+ 4 APPPATH\Controllers\Main\User.php(11): App\Controllers\BaseController->masterView('user/', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 06:51:48 --> Call to private App\Models\ModelUser::__construct() from scope App\Controllers\AJAX\User
+in APPPATH\Controllers\AJAX\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 06:52:13 --> Call to private App\Models\ModelUser::__construct() from scope App\Controllers\AJAX\User
+in APPPATH\Controllers\AJAX\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 06:52:54 --> Call to private App\Models\ModelUser::__construct() from scope App\Controllers\AJAX\User
+in APPPATH\Controllers\AJAX\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 06:53:24 --> Call to private App\Models\ModelUser::__construct() from scope App\Controllers\AJAX\User
+in APPPATH\Controllers\AJAX\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 08:57:45 --> Call to a member function run() on null
+in APPPATH\Controllers\AJAX\User.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

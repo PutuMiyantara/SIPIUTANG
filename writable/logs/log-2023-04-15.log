@@ -1,0 +1,1105 @@
+CRITICAL - 2023-04-15 01:21:08 --> CodeIgniter\Validation\Validation::run(): Argument #1 ($data) must be of type ?array, CodeIgniter\HTTP\Files\UploadedFile given, called in C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\User.php on line 32
+in SYSTEMPATH\Validation\Validation.php on line 110.
+ 1 APPPATH\Controllers\AJAX\User.php(32): CodeIgniter\Validation\Validation->run(Object(CodeIgniter\HTTP\Files\UploadedFile), 'userfoto')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 01:22:38 --> CodeIgniter\Validation\Validation::run(): Argument #1 ($data) must be of type ?array, CodeIgniter\HTTP\Files\UploadedFile given, called in C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\User.php on line 32
+in SYSTEMPATH\Validation\Validation.php on line 110.
+ 1 APPPATH\Controllers\AJAX\User.php(32): CodeIgniter\Validation\Validation->run(Object(CodeIgniter\HTTP\Files\UploadedFile), 'userfoto')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 01:26:21 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\AJAX\User.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 01:28:54 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\AJAX\User.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 01:32:41 --> CodeIgniter\Validation\Validation::run(): Argument #1 ($data) must be of type ?array, CodeIgniter\HTTP\Files\UploadedFile given, called in C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\User.php on line 32
+in SYSTEMPATH\Validation\Validation.php on line 110.
+ 1 APPPATH\Controllers\AJAX\User.php(32): CodeIgniter\Validation\Validation->run(Object(CodeIgniter\HTTP\Files\UploadedFile), 'userfoto')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 01:32:59 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\AJAX\User.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 01:33:31 --> CodeIgniter\Validation\Validation::run(): Argument #1 ($data) must be of type ?array, CodeIgniter\HTTP\Files\UploadedFile given, called in C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\User.php on line 32
+in SYSTEMPATH\Validation\Validation.php on line 110.
+ 1 APPPATH\Controllers\AJAX\User.php(32): CodeIgniter\Validation\Validation->run(Object(CodeIgniter\HTTP\Files\UploadedFile), 'userfoto')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 01:34:06 --> CodeIgniter\Validation\Validation::run(): Argument #1 ($data) must be of type ?array, CodeIgniter\HTTP\Files\UploadedFile given, called in C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\User.php on line 32
+in SYSTEMPATH\Validation\Validation.php on line 110.
+ 1 APPPATH\Controllers\AJAX\User.php(32): CodeIgniter\Validation\Validation->run(Object(CodeIgniter\HTTP\Files\UploadedFile), 'userfoto')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 01:34:39 --> CodeIgniter\Validation\Validation::run(): Argument #1 ($data) must be of type ?array, CodeIgniter\HTTP\Files\UploadedFile given, called in C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\User.php on line 32
+in SYSTEMPATH\Validation\Validation.php on line 110.
+ 1 APPPATH\Controllers\AJAX\User.php(32): CodeIgniter\Validation\Validation->run(Object(CodeIgniter\HTTP\Files\UploadedFile), 'userfoto')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 01:35:03 --> CodeIgniter\Validation\Validation::run(): Argument #1 ($data) must be of type ?array, CodeIgniter\HTTP\Files\UploadedFile given, called in C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\User.php on line 32
+in SYSTEMPATH\Validation\Validation.php on line 110.
+ 1 APPPATH\Controllers\AJAX\User.php(32): CodeIgniter\Validation\Validation->run(Object(CodeIgniter\HTTP\Files\UploadedFile), 'userfoto')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:15:14 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 116.
+ 1 APPPATH\Controllers\AJAX\User.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 116)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:15:41 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 115.
+ 1 APPPATH\Controllers\AJAX\User.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:16:23 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 115.
+ 1 APPPATH\Controllers\AJAX\User.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:16:24 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 115.
+ 1 APPPATH\Controllers\AJAX\User.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:18:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\User.php on line 116.
+ 1 APPPATH\Controllers\AJAX\User.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\User.php', 116)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:19:11 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 117.
+ 1 APPPATH\Controllers\AJAX\User.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:19:46 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 117.
+ 1 APPPATH\Controllers\AJAX\User.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:20:42 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 117.
+ 1 APPPATH\Controllers\AJAX\User.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:20:44 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 117.
+ 1 APPPATH\Controllers\AJAX\User.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:20:51 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 117.
+ 1 APPPATH\Controllers\AJAX\User.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:21:13 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 117.
+ 1 APPPATH\Controllers\AJAX\User.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:21:25 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 117.
+ 1 APPPATH\Controllers\AJAX\User.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:21:26 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 117.
+ 1 APPPATH\Controllers\AJAX\User.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:21:29 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 117.
+ 1 APPPATH\Controllers\AJAX\User.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:21:55 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 117.
+ 1 APPPATH\Controllers\AJAX\User.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:22:03 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 117.
+ 1 APPPATH\Controllers\AJAX\User.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:22:08 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 117.
+ 1 APPPATH\Controllers\AJAX\User.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 02:22:53 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 118.
+ 1 APPPATH\Controllers\AJAX\User.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData('20')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 03:12:42 --> finfo_file(C:\Users\user\AppData\Local\Temp\phpF3D1.tmp): Failed to open stream: No such file or directory
+in SYSTEMPATH\Files\File.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\Users\\user\\AppData\\Local\\Temp\\phpF3D1.tmp): Failed to open stream: No such file or directory', 'SYSTEMPATH\\Files\\File.php', 115)
+ 2 SYSTEMPATH\Files\File.php(115): finfo_file(Object(finfo), 'C:\\Users\\user\\AppData\\Local\\Temp\\phpF3D1.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(291): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Files\File.php(127): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 APPPATH\Controllers\AJAX\User.php(138): CodeIgniter\Files\File->getRandomName()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 03:15:01 --> finfo_file(C:\Users\user\AppData\Local\Temp\php11F1.tmp): Failed to open stream: No such file or directory
+in SYSTEMPATH\Files\File.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\Users\\user\\AppData\\Local\\Temp\\php11F1.tmp): Failed to open stream: No such file or directory', 'SYSTEMPATH\\Files\\File.php', 115)
+ 2 SYSTEMPATH\Files\File.php(115): finfo_file(Object(finfo), 'C:\\Users\\user\\AppData\\Local\\Temp\\php11F1.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(291): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Files\File.php(127): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 APPPATH\Controllers\AJAX\User.php(139): CodeIgniter\Files\File->getRandomName()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 03:16:04 --> finfo_file(C:\Users\user\AppData\Local\Temp\php858.tmp): Failed to open stream: No such file or directory
+in SYSTEMPATH\Files\File.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\Users\\user\\AppData\\Local\\Temp\\php858.tmp): Failed to open stream: No such file or directory', 'SYSTEMPATH\\Files\\File.php', 115)
+ 2 SYSTEMPATH\Files\File.php(115): finfo_file(Object(finfo), 'C:\\Users\\user\\AppData\\Local\\Temp\\php858.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(291): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Files\File.php(127): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 APPPATH\Controllers\AJAX\User.php(140): CodeIgniter\Files\File->getRandomName()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 03:17:37 --> unlink(./foto/1681524043_ed091e4110895f03f0ce.jpg): No such file or directory
+in APPPATH\Controllers\AJAX\User.php on line 141.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./foto/1681524043_ed091e4110895f03f0ce.jpg): No such file or directory', 'APPPATH\\Controllers\\AJAX\\User.php', 141)
+ 2 APPPATH\Controllers\AJAX\User.php(141): unlink('./foto/1681524043_ed091e4110895f03f0ce.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 03:18:26 --> unlink(./foto/1681528657_0f607995fd1f5df3a54c.png): No such file or directory
+in APPPATH\Controllers\AJAX\User.php on line 141.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./foto/1681528657_0f607995fd1f5df3a54c.png): No such file or directory', 'APPPATH\\Controllers\\AJAX\\User.php', 141)
+ 2 APPPATH\Controllers\AJAX\User.php(141): unlink('./foto/1681528657_0f607995fd1f5df3a54c.png')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 03:19:42 --> unlink(./foto/): Is a directory
+in APPPATH\Controllers\AJAX\User.php on line 141.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./foto/): Is a directory', 'APPPATH\\Controllers\\AJAX\\User.php', 141)
+ 2 APPPATH\Controllers\AJAX\User.php(141): unlink('FCPATH\\foto')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 03:21:02 --> unlink(./foto/1681528782_d5faec83c67b789d2816.png): No such file or directory
+in APPPATH\Controllers\AJAX\User.php on line 141.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./foto/1681528782_d5faec83c67b789d2816.png): No such file or directory', 'APPPATH\\Controllers\\AJAX\\User.php', 141)
+ 2 APPPATH\Controllers\AJAX\User.php(141): unlink('./foto/1681528782_d5faec83c67b789d2816.png')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 03:27:31 --> finfo_file(C:\Users\user\AppData\Local\Temp\php838C.tmp): Failed to open stream: No such file or directory
+in SYSTEMPATH\Files\File.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\Users\\user\\AppData\\Local\\Temp\\php838C.tmp): Failed to open stream: No such file or directory', 'SYSTEMPATH\\Files\\File.php', 115)
+ 2 SYSTEMPATH\Files\File.php(115): finfo_file(Object(finfo), 'C:\\Users\\user\\AppData\\Local\\Temp\\php838C.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(291): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Files\File.php(127): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 APPPATH\Controllers\AJAX\User.php(137): CodeIgniter\Files\File->getRandomName()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 03:43:42 --> unlink(./foto/1681530095_0cb033106bad8cbaea32.png): No such file or directory
+in APPPATH\Controllers\AJAX\User.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./foto/1681530095_0cb033106bad8cbaea32.png): No such file or directory', 'APPPATH\\Controllers\\AJAX\\User.php', 192)
+ 2 APPPATH\Controllers\AJAX\User.php(192): unlink('./foto/1681530095_0cb033106bad8cbaea32.png')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 03:46:48 --> unlink(./foto/1681530222_b4cc5e167272df3b1374.png): No such file or directory
+in APPPATH\Controllers\AJAX\User.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./foto/1681530222_b4cc5e167272df3b1374.png): No such file or directory', 'APPPATH\\Controllers\\AJAX\\User.php', 192)
+ 2 APPPATH\Controllers\AJAX\User.php(192): unlink('./foto/1681530222_b4cc5e167272df3b1374.png')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 03:47:22 --> unlink(./foto/1681530408_23989ab49584eed2e9ae.png): No such file or directory
+in APPPATH\Controllers\AJAX\User.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./foto/1681530408_23989ab49584eed2e9ae.png): No such file or directory', 'APPPATH\\Controllers\\AJAX\\User.php', 192)
+ 2 APPPATH\Controllers\AJAX\User.php(192): unlink('./foto/1681530408_23989ab49584eed2e9ae.png')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 04:23:28 --> Undefined array key "username"
+in APPPATH\Controllers\AJAX\User.php on line 100.
+ 1 APPPATH\Controllers\AJAX\User.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\AJAX\\User.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->deleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 04:23:40 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\AJAX\User.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->deleteData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 04:28:42 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\AJAX\User.php on line 101.
+ 1 APPPATH\Controllers\AJAX\User.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\AJAX\\User.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->deleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 06:35:28 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(163): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 06:35:28 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(163): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 06:36:28 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(164): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 06:36:28 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(164): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 06:37:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(164): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 06:37:44 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(164): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 07:12:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(168): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 07:12:07 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`, `file_bukti_tf`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:, :file_bukti_tf:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(168): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 07:12:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 07:12:52 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`, `file_bukti_tf`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:, :file_bukti_tf:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 07:13:36 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 07:13:36 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`, `file_bukti_tf`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:, :file_bukti_tf:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 07:14:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 07:14:53 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`, `file_bukti_tf`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:, :file_bukti_tf:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 07:17:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 07:17:53 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`, `file_bukti_tf`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:, :file_bukti_tf:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 07:18:22 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 07:18:22 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`, `file_bukti_tf`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:, :file_bukti_tf:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 07:18:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 07:18:40 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`, `file_bukti_tf`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:, :file_bukti_tf:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 07:21:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 07:21:51 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(169): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 07:22:16 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 248.
+ 1 APPPATH\Controllers\AJAX\Payment.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment('5', 'multiple')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 07:22:55 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 248.
+ 1 APPPATH\Controllers\AJAX\Payment.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment('5', 'multiple')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 07:23:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 248.
+ 1 APPPATH\Controllers\AJAX\Payment.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment('5', 'multiple')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 07:23:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(275): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 07:23:35 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(275): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 07:35:58 --> Undefined array key "nominal_payment"
+in APPPATH\Controllers\AJAX\Payment.php on line 137.
+ 1 APPPATH\Controllers\AJAX\Payment.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nominal_payment"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment('5', 'multiple')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 07:36:27 --> Undefined array key "nominal_payment"
+in APPPATH\Controllers\AJAX\Payment.php on line 137.
+ 1 APPPATH\Controllers\AJAX\Payment.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nominal_payment"', 'APPPATH\\Controllers\\AJAX\\Payment.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment('5', 'multiple')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 07:37:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(170): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 07:37:55 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(170): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 07:38:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(170): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 07:38:16 --> Cannot add or update a child row: a foreign key constraint fails (`db_piutang`.`tb_payment`, CONSTRAINT `payment_bank` FOREIGN KEY (`id_bank_pembayar`) REFERENCES `tb_bank` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `verifikasi`, `id_rekening_penerima`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_bank_pembayar:, :rekening_pembayar:, :atas_nama_pembayar:, :verifikasi:, :id_rekening_penerima:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(170): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 07:58:02 --> mysqli_sql_exception: Duplicate entry '323232323' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(172): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment('5', 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 07:58:02 --> Duplicate entry '323232323' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_rekening_penerima`, `verifikasi`, `atas_nama_pembayar`, `id_bank_pembayar`, `rekening_pembayar`, `file_bukti_tf`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_rekening_penerima:, :verifikasi:, :atas_nama_pembayar:, :id_bank_pembayar:, :rekening_pembayar:, :file_bukti_tf:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(172): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment('5', 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 07:59:42 --> mysqli_sql_exception: Duplicate entry '8787877' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(197): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 07:59:42 --> Duplicate entry '8787877' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_rekening_penerima`, `verifikasi`, `atas_nama_pembayar`, `id_bank_pembayar`, `rekening_pembayar`, `file_bukti_tf`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_rekening_penerima:, :verifikasi:, :atas_nama_pembayar:, :id_bank_pembayar:, :rekening_pembayar:, :file_bukti_tf:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(197): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 08:00:23 --> mysqli_sql_exception: Duplicate entry '87878772121' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(197): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 08:00:23 --> Duplicate entry '87878772121' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_rekening_penerima`, `verifikasi`, `atas_nama_pembayar`, `id_bank_pembayar`, `rekening_pembayar`, `file_bukti_tf`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_rekening_penerima:, :verifikasi:, :atas_nama_pembayar:, :id_bank_pembayar:, :rekening_pembayar:, :file_bukti_tf:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(197): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 08:28:08 --> mysqli_sql_exception: Duplicate entry '1212112112w1211' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 08:28:08 --> Duplicate entry '1212112112w1211' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_rekening_penerima`, `verifikasi`, `file_bukti_tf`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_rekening_penerima:, :verifikasi:, :file_bukti_tf:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 08:29:14 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Models\ModelPayment.php(112): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 APPPATH\Controllers\AJAX\Payment.php(246): App\Models\ModelPayment->paymentAll([], [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 08:29:25 --> mysqli_sql_exception: Duplicate entry '1212112112w1211' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 08:29:25 --> Duplicate entry '1212112112w1211' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_rekening_penerima`, `verifikasi`, `file_bukti_tf`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_rekening_penerima:, :verifikasi:, :file_bukti_tf:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 08:31:15 --> mysqli_sql_exception: Duplicate entry '1212112112w1211' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 08:31:16 --> Duplicate entry '1212112112w1211' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_rekening_penerima`, `verifikasi`, `file_bukti_tf`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_rekening_penerima:, :verifikasi:, :file_bukti_tf:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 08:31:22 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Models\ModelPayment.php(112): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 APPPATH\Controllers\AJAX\Payment.php(246): App\Models\ModelPayment->payment([], [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 08:33:13 --> mysqli_sql_exception: Duplicate entry '12121' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 08:33:13 --> Duplicate entry '12121' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_rekening_penerima`, `verifikasi`, `file_bukti_tf`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_rekening_penerima:, :verifikasi:, :file_bukti_tf:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 08:33:28 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Models\ModelPayment.php(112): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 APPPATH\Controllers\AJAX\Payment.php(246): App\Models\ModelPayment->payment([], [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 08:35:56 --> mysqli_sql_exception: Duplicate entry '12121121' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 08:35:56 --> Duplicate entry '12121121' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_rekening_penerima`, `verifikasi`, `file_bukti_tf`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_rekening_penerima:, :verifikasi:, :file_bukti_tf:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 08:36:44 --> mysqli_sql_exception: Duplicate entry '12121121' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 08:36:44 --> Duplicate entry '12121121' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_rekening_penerima`, `verifikasi`, `file_bukti_tf`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_rekening_penerima:, :verifikasi:, :file_bukti_tf:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 08:36:53 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Models\ModelPayment.php(112): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 APPPATH\Controllers\AJAX\Payment.php(246): App\Models\ModelPayment->payment([], [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 08:40:41 --> mysqli_sql_exception: Duplicate entry '12121121sadsada' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 08:40:41 --> Duplicate entry '12121121sadsada' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_rekening_penerima`, `verifikasi`, `file_bukti_tf`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_rekening_penerima:, :verifikasi:, :file_bukti_tf:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 08:41:36 --> mysqli_sql_exception: Duplicate entry '12121121sadsadadsad' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 08:41:36 --> Duplicate entry '12121121sadsadadsad' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_rekening_penerima`, `verifikasi`, `file_bukti_tf`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_rekening_penerima:, :verifikasi:, :file_bukti_tf:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 08:42:08 --> mysqli_sql_exception: Duplicate entry '12121121sadsadadsaddsad' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 08:42:08 --> Duplicate entry '12121121sadsadadsaddsad' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_rekening_penerima`, `verifikasi`, `file_bukti_tf`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_rekening_penerima:, :verifikasi:, :file_bukti_tf:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-15 08:45:42 --> mysqli_sql_exception: Duplicate entry '12121121sadsadadsaddsaddasd' for key 'tb_payment.no_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment(Array, 'multiple')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-15 08:45:42 --> Duplicate entry '12121121sadsadadsaddsaddasd' for key 'tb_payment.no_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_payment` (`no_payment`, `nominal_payment`, `tgl_pembayaran`, `id_rekening_penerima`, `verifikasi`, `file_bukti_tf`, `keterangan`) VALUES (:no_payment:, :nominal_payment:, :tgl_pembayaran:, :id_rekening_penerima:, :verifikasi:, :file_bukti_tf:, :keterangan:)', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(193): App\Models\ModelPayment->insertPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 09:02:46 --> unlink(./bukti_transfer/1681549366_363802ba9ab00cccb9af.png): No such file or directory
+in APPPATH\Controllers\AJAX\Payment.php on line 250.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./bukti_transfer/1681549366_363802ba9ab00cccb9af.png): No such file or directory', 'APPPATH\\Controllers\\AJAX\\Payment.php', 250)
+ 2 APPPATH\Controllers\AJAX\Payment.php(250): unlink('./bukti_transfer/1681549366_363802ba9ab00cccb9af.png')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-15 09:03:25 --> unlink(./bukti_transfer/1681549405_b6b7ab78fc57d9321903.png): No such file or directory
+in APPPATH\Controllers\AJAX\Payment.php on line 250.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./bukti_transfer/1681549405_b6b7ab78fc57d9321903.png): No such file or directory', 'APPPATH\\Controllers\\AJAX\\Payment.php', 250)
+ 2 APPPATH\Controllers\AJAX\Payment.php(250): unlink('./bukti_transfer/1681549405_b6b7ab78fc57d9321903.png')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->payment([...], 'multiple')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

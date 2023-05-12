@@ -1,0 +1,187 @@
+CRITICAL - 2023-04-14 02:12:00 --> Undefined property: stdClass::$count_invoice
+in APPPATH\Controllers\AJAX\Dashboard.php on line 25.
+ 1 APPPATH\Controllers\AJAX\Dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$count_invoice', 'APPPATH\\Controllers\\AJAX\\Dashboard.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Dashboard->getDataBoxDash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 02:13:50 --> Undefined property: stdClass::$count_invoice
+in APPPATH\Controllers\AJAX\Dashboard.php on line 25.
+ 1 APPPATH\Controllers\AJAX\Dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$count_invoice', 'APPPATH\\Controllers\\AJAX\\Dashboard.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Dashboard->getDataBoxDash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-14 02:22:10 --> mysqli_sql_exception: Unknown column 'tgl_payment' in 'where clause' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_reke...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_reke...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_reke...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_reke...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(25): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Dashboard.php(33): App\Models\ModelLaporan->getLaporanSumPayment(Array, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Dashboard->getDataBoxDash()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Dashboard))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-14 02:22:10 --> Unknown column 'tgl_payment' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_rekening_penerima`, SUM(nominal_payment) AS sum_nominal_payment, COUNT(no_payment) AS count_payment
+FROM `tb_payment`
+WHERE `tgl_payment` >= :tgl_payment:
+AND `tgl_payment` <= :tgl_payment.1:
+AND `verifikasi` = :verifikasi:
+GROUP BY `tb_payment`.`id_rekening_penerima`', [...], false)
+ 2 APPPATH\Models\ModelLaporan.php(25): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Dashboard.php(33): App\Models\ModelLaporan->getLaporanSumPayment([...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Dashboard->getDataBoxDash()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 02:22:39 --> Undefined property: stdClass::$sum_nilai_payment
+in APPPATH\Controllers\AJAX\Dashboard.php on line 36.
+ 1 APPPATH\Controllers\AJAX\Dashboard.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sum_nilai_payment', 'APPPATH\\Controllers\\AJAX\\Dashboard.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Dashboard->getDataBoxDash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 03:12:33 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\AJAX\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\AJAX\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\AJAX\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Dashboard->getDataBoxDash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 03:14:59 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\AJAX\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\AJAX\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\AJAX\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Dashboard->getDataBoxDash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 03:15:18 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\AJAX\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\AJAX\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\AJAX\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Dashboard->getDataBoxDash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 03:15:40 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\AJAX\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\AJAX\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\AJAX\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Dashboard->getDataBoxDash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 03:16:02 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\AJAX\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\AJAX\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\AJAX\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Dashboard->getDataBoxDash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-14 03:22:29 --> mysqli_sql_exception: Unknown column 'tgl_pembayaran' in 'where clause' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(nila...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(nila...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(nila...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(nila...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelLaporan.php(84): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Dashboard.php(50): App\Models\ModelLaporan->getLaporanSumInvoice(Array, NULL, Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Dashboard->getDataBoxDash()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Dashboard))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-14 03:22:29 --> Unknown column 'tgl_pembayaran' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(nilai_invoice) AS sum_nilai_invoice, COUNT(sisa_hutang) AS count_sisa_hutang
+FROM `tb_invoice`
+WHERE `sisa_hutang` = :sisa_hutang:
+AND `tgl_pembayaran` >= :tgl_pembayaran:
+AND `tgl_pembayaran` <= :tgl_pembayaran.1:', [...], false)
+ 2 APPPATH\Models\ModelLaporan.php(84): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\Dashboard.php(50): App\Models\ModelLaporan->getLaporanSumInvoice([...], null, [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Dashboard->getDataBoxDash()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 08:05:23 --> "userfoto" is not a validation rules group.
+in SYSTEMPATH\Validation\Validation.php on line 619.
+ 1 SYSTEMPATH\Validation\Validation.php(619): CodeIgniter\Validation\Exceptions\ValidationException::forGroupNotFound('userfoto')
+ 2 SYSTEMPATH\Validation\Validation.php(118): CodeIgniter\Validation\Validation->loadRuleGroup('userfoto')
+ 3 APPPATH\Controllers\AJAX\User.php(68): CodeIgniter\Validation\Validation->run([...], 'userfoto')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-04-14 08:05:49 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\AJAX\User.php on line 55.
+ 1 APPPATH\Controllers\AJAX\User.php(55): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 08:05:50 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\AJAX\User.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-04-14 08:08:23 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\AJAX\User.php on line 56.
+ 1 APPPATH\Controllers\AJAX\User.php(56): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 08:08:23 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\AJAX\User.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-04-14 08:08:54 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\AJAX\User.php on line 56.
+ 1 APPPATH\Controllers\AJAX\User.php(56): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 08:08:54 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\AJAX\User.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-04-14 08:09:20 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\AJAX\User.php on line 56.
+ 1 APPPATH\Controllers\AJAX\User.php(56): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 08:09:20 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\AJAX\User.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

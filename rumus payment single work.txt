@@ -1,0 +1,41 @@
+    // public function payment ($where) {
+    //     $mPayment = new ModelPayment();
+    //     $mInvoice = new ModelInvoice();
+    //     $dataInsertPayment = $this->request->getJSON(true);
+    //     $errortext[] = '';
+    //     $message = '';
+    //     $where = array('tb_invoice.id' => $where);
+    //     $dataInvoice = $mInvoice->getInvoice($where);
+    //     $dataInvoiceUpdate = array();
+    //     $lastinsert_id = null;
+    //     $dataInvoicePayment = array();
+        
+    //     foreach ($dataInvoice as $key) {
+    //         # code...
+    //         $data = array(
+    //             'id_invoice' => $key->id,
+    //             'keterangan' => '0',
+    //         );
+    //         $dataInsertPayment = array_merge($dataInsertPayment, $data);
+    //         if ($this->validator->run($dataInsertPayment, 'paymenttext')) {
+    //             $sisa_hutang = $key->sisa_hutang - $dataInsertPayment['nominal_payment'];
+    //             if ($sisa_hutang < 0) {
+    //                 # code...
+    //                 $errortext[] = "Jumlah Pembayaran Melebihi Nominal";
+    //             } else{
+    //                 $id_invoice = array('id' => $key->id);
+    //                 $dataInvoiceUpdate = array(
+    //                     'sisa_hutang' => $sisa_hutang,
+    //                 );
+    //                 $message = "Berhasil Membayar";
+    //             }
+                
+    //         } else {
+    //             $errortext[] = implode(', ', $this->validator->getErrors());
+    //         }
+    //     }
+        
+    //     $validationtext = implode('', $errortext);
+    //     $output = array('errortext' => $validationtext, 'message' => $message);
+    //     echo json_encode($output);
+    // }

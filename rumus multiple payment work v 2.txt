@@ -1,0 +1,84 @@
+ public function multiplePayment ($id_customer) {
+        $mPayment = new ModelPayment();
+        $mInvoice = new ModelInvoice();
+        $dataInsertPayment = $this->request->getJSON(true);
+        $errortext[] = '';
+        $message = '';
+        $where = array('tb_invoice.id_customer' => $id_customer);
+        $dataInvoice = $mInvoice->getInvoice($where);
+        $nominal_payment = $dataInsertPayment['nominal_payment'];
+        $uang = null;
+        // $dataInvoiceUpdate = array();
+        // $nominal_payment_invoice = null;
+        $lastinsert_id = null;
+        $dataInvoicePayment = array();
+        $data = array(
+            'keterangan' => '0',
+        );
+        if ($this->validator->run($dataInsertPayment, 'paymenttext')) {
+            $dataInsertPayment = array_merge($dataInsertPayment, $data);
+        } else {
+            $errortext[] = implode(', ', $this->validator->getErrors());
+        }
+        $lastinsert_id = $mPayment->insertPayment($dataInsertPayment);
+
+        if ($lastinsert_id != null) {
+            # code...
+            $uang = $nominal_payment;
+            foreach ($dataInvoice as $key) {
+                # code...
+                # code...
+                // $data = array(
+                //     'id_invoice' => $key->id,
+                //     'id_payment' => $lastinsert_id,
+                //     'jumlah_hutang' => $key->sisa_hutang,
+                //     // 'sisa_hutang' => $key->sisa_hutang,
+                //     'sisa_uang' => $uang,
+                // );
+                if ($uang > $key->sisa_hutang) {
+                    # code...
+                    $uang = $uang - $key->sisa_hutang;
+                    $data = array(
+                        'id_invoice' => $key->id,
+                        // 'id_payment' => $lastinsert_id,
+                        'jumlah_hutang' => $key->sisa_hutang,
+                        'sisa_hutang' => 0,
+                        'dibayarkan' => $key->sisa_hutang,
+                        'sisa_uang' => $uang
+                    );
+                } elseif ($uang == $key->sisa_hutang) {
+                    # code...
+                    $uang = $uang - $key->sisa_hutang;
+                    $data = array(
+                        'id_invoice' => $key->id,
+                        // 'id_payment' => $lastinsert_id,
+                        'jumlah_hutang' => $key->sisa_hutang,
+                        'sisa_hutang' => 0,
+                        'dibayarkan' => $key->sisa_hutang,
+                        'sisa_uang' => $uang
+                    );
+                } elseif ($uang < $key->sisa_hutang) {
+                    # code...
+                    $data = array(
+                        'id_invoice' => $key->id,
+                        // 'id_payment' => $lastinsert_id,
+                        'jumlah_hutang' => $key->sisa_hutang,
+                        'sisa_hutang' => $key->sisa_hutang - $uang,
+                        'dibayarkan' => $uang,
+                        'sisa_uang' => 0
+                    );
+                    $uang = 0;
+                }
+                if ($data['jumlah_hutang'] != $data['sisa_hutang']) {
+                    # code...
+                    array_push($dataInvoicePayment, $data);
+                }
+            }
+            echo json_encode($dataInvoicePayment);
+            die;
+            
+        }
+        $validationtext = implode('', $errortext);
+        $output = array('errortext' => $validationtext, 'message' => $message);
+        echo json_encode($output);
+    }

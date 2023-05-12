@@ -1,0 +1,11 @@
+ $data = [
+                [
+                    'id_customer'	=>	5,
+                    'sisa_hutang'	=>	0,
+                ],
+                [
+                    'id_customer'	=>	5,
+                    'sisa_hutang'	=>	0,
+                ]
+            ];
+            $query = $builderinvoice->updateBatch($data,'id_customer');

@@ -1,0 +1,97 @@
+INFO - 2023-03-14 00:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-14 00:30:03 --> Undefined variable $dataUrl
+in APPPATH\Views\template\sidebar.php on line 29.
+ 1 APPPATH\Views\template\sidebar.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataUrl', 'APPPATH\\Views\\template\\sidebar.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('template/sidebar', [], true)
+ 5 APPPATH\Controllers\BaseController.php(61): view('template/sidebar', [])
+ 6 APPPATH\Controllers\Main\User.php(16): App\Controllers\BaseController->masterView('user/add', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main\User->add()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-14 01:29:19 --> Call to a member function run() on null
+in APPPATH\Controllers\AJAX\User.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-14 01:31:39 --> Call to a member function run() on null
+in APPPATH\Controllers\AJAX\User.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-14 01:45:42 --> Call to a member function run() on null
+in APPPATH\Controllers\AJAX\User.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-14 01:48:50 --> mysqli_sql_exception: Unknown column 'repass' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelUser.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\User.php(26): App\Models\ModelUser->insertData(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-14 01:48:50 --> Unknown column 'repass' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_user` (`username`, `password`, `repass`, `role`, `status`, `nama`) VALUES (:username:, :password:, :repass:, :role:, :status:, :nama:)', [...], false)
+ 2 APPPATH\Models\ModelUser.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AJAX\User.php(26): App\Models\ModelUser->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-14 03:05:35 --> Too few arguments to function App\Controllers\AJAX\User::deleteData(), 0 passed in C:\laragon\www\SIPIUTANG\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\AJAX\User.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->deleteData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-14 04:08:31 --> Undefined array key "password"
+in APPPATH\Controllers\AJAX\User.php on line 178.
+ 1 APPPATH\Controllers\AJAX\User.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH\\Controllers\\AJAX\\User.php', 178)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-14 04:09:13 --> Undefined array key "password"
+in APPPATH\Controllers\AJAX\User.php on line 178.
+ 1 APPPATH\Controllers\AJAX\User.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH\\Controllers\\AJAX\\User.php', 178)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-14 04:10:42 --> Undefined array key "password"
+in APPPATH\Controllers\AJAX\User.php on line 178.
+ 1 APPPATH\Controllers\AJAX\User.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH\\Controllers\\AJAX\\User.php', 178)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-14 04:35:19 --> Cannot use [] for reading
+in APPPATH\Controllers\AJAX\User.php on line 178.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\User->updateData([...])
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

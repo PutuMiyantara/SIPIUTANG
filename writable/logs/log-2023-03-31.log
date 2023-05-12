@@ -1,0 +1,657 @@
+ERROR - 2023-03-31 02:17:47 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(95): App\Models\ModelInvoiceEkspedisi->deleteData(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 02:17:47 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_invoice_ekspedisi`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(95): App\Models\ModelInvoiceEkspedisi->deleteData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 02:18:01 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(95): App\Models\ModelInvoiceEkspedisi->deleteData(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 02:18:01 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_invoice_ekspedisi`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(95): App\Models\ModelInvoiceEkspedisi->deleteData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 02:18:07 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(95): App\Models\ModelInvoiceEkspedisi->deleteData(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 02:18:07 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_invoice_ekspedisi`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(95): App\Models\ModelInvoiceEkspedisi->deleteData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 02:20:08 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(95): App\Models\ModelInvoiceEkspedisi->deleteData(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 02:20:08 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_invoice_ekspedisi`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(95): App\Models\ModelInvoiceEkspedisi->deleteData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 02:20:49 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(95): App\Models\ModelInvoiceEkspedisi->deleteData(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 02:20:49 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_invoice_ekspedisi`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(95): App\Models\ModelInvoiceEkspedisi->deleteData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 03:12:33 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(96): App\Models\ModelInvoiceEkspedisi->deleteData(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 03:12:33 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_invoice_ekspedisi`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(96): App\Models\ModelInvoiceEkspedisi->deleteData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 03:12:40 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(96): App\Models\ModelInvoiceEkspedisi->deleteData(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 03:12:40 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_invoice_ekspedisi`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(96): App\Models\ModelInvoiceEkspedisi->deleteData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 03:12:52 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(96): App\Models\ModelInvoiceEkspedisi->deleteData(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 03:12:52 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_invoice_ekspedisi`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(96): App\Models\ModelInvoiceEkspedisi->deleteData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-31 03:14:10 --> Undefined array key "password"
+in APPPATH\Controllers\AJAX\InvoiceEkspedisi.php on line 124.
+ 1 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH\\Controllers\\AJAX\\InvoiceEkspedisi.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->updateData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 04:21:36 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(96): App\Models\ModelInvoiceEkspedisi->deleteData(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 04:21:36 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_invoice_ekspedisi`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(96): App\Models\ModelInvoiceEkspedisi->deleteData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 04:22:27 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(96): App\Models\ModelInvoiceEkspedisi->deleteData(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 04:22:28 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_invoice_ekspedisi`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(96): App\Models\ModelInvoiceEkspedisi->deleteData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 04:22:41 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\InvoiceEkspedisi.php(96): App\Models\ModelInvoiceEkspedisi->deleteData(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 04:22:41 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_piutang`.`tb_invoice`, CONSTRAINT `invoice_invoiceekspedisi` FOREIGN KEY (`id_invoice_ekspedisi`) REFERENCES `tb_invoice_ekspedisi` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_invoice_ekspedisi`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(50): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\AJAX\InvoiceEkspedisi.php(96): App\Models\ModelInvoiceEkspedisi->deleteData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\InvoiceEkspedisi->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\InvoiceEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-31 05:12:53 --> Invalid file: "piutang/invoice_ekspedisi.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('piutang/invoice_ekspedisi.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('piutang/invoice_ekspedisi', [], true)
+ 3 APPPATH\Controllers\BaseController.php(63): view('piutang/invoice_ekspedisi', [])
+ 4 APPPATH\Controllers\Main\PiutangEkspedisi.php(11): App\Controllers\BaseController->masterView('piutang/invoice_ekspedisi', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main\PiutangEkspedisi->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main\PiutangEkspedisi))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 06:14:06 --> mysqli_sql_exception: Unknown column 'id_customer' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 06:14:06 --> Unknown column 'id_customer' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang_ekspedisi) as hutang_ekspedisi, `id_customer`, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`
+FROM `tb_invoice_ekspedisi`
+LEFT JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`
+GROUP BY `tb_invoice`.`id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 06:15:05 --> mysqli_sql_exception: Unknown column 'nama_usaha' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 06:15:05 --> Unknown column 'nama_usaha' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang_ekspedisi) as hutang_ekspedisi, `id_customer`, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`
+FROM `tb_invoice_ekspedisi`
+LEFT JOIN `tb_invoice` ON `tb_invoice`.`id` = `tb_invoice_ekspedisi`.`id_invoice_ekspedisi`
+LEFT JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`
+GROUP BY `tb_invoice`.`id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 06:15:21 --> mysqli_sql_exception: Unknown column 'nama_usaha' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 06:15:21 --> Unknown column 'nama_usaha' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang_ekspedisi) as hutang_ekspedisi, `id_customer`, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`
+FROM `tb_invoice_ekspedisi`
+LEFT JOIN `tb_invoice` ON `tb_invoice`.`id` = `tb_invoice_ekspedisi`.`id_invoice_ekspedisi`
+LEFT JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`
+GROUP BY `tb_invoice`.`id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 06:17:38 --> mysqli_sql_exception: Unknown column 'tb_invoice_ekspedisi.id_invoice_ekspedisi' in 'on clause' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(100): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 06:17:38 --> Unknown column 'tb_invoice_ekspedisi.id_invoice_ekspedisi' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang_ekspedisi) as hutang_ekspedisi, `id_customer`, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`
+FROM `tb_invoice_ekspedisi`
+LEFT JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`
+LEFT JOIN `tb_invoice` ON `tb_invoice`.`id` = `tb_invoice_ekspedisi`.`id_invoice_ekspedisi`
+LEFT JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+GROUP BY `tb_invoice`.`id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(100): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-31 06:18:41 --> Undefined property: stdClass::$hutang_invoice
+in APPPATH\Controllers\AJAX\PiutangEkspedisi.php on line 31.
+ 1 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$hutang_invoice', 'APPPATH\\Controllers\\AJAX\\PiutangEkspedisi.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-31 06:19:30 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(36): CodeIgniter\Model->__call('getInvoice', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-31 06:20:57 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(36): CodeIgniter\Model->__call('getInvoice', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 06:41:10 --> mysqli_sql_exception: Unknown column 'id_invoice_ekspedisi' in 'where clause' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(26): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\PiutangEkspedisi.php(36): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 06:41:10 --> Unknown column 'id_invoice_ekspedisi' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice_ekspedisi`.`id`, `no_invoice_ekspedisi`, `banyak_barang`, `nilai_invoice_ekspedisi`, `tgl_pengiriman`, `keterangan`, `sisa_hutang_ekspedisi`, `id_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice_ekspedisi`
+JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`
+WHERE `id_invoice_ekspedisi` IS NULL', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(26): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(36): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 06:41:23 --> mysqli_sql_exception: Unknown column 'id_invoice_ekspedisi' in 'where clause' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(26): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\PiutangEkspedisi.php(36): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 06:41:23 --> Unknown column 'id_invoice_ekspedisi' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice_ekspedisi`.`id`, `no_invoice_ekspedisi`, `banyak_barang`, `nilai_invoice_ekspedisi`, `tgl_pengiriman`, `keterangan`, `sisa_hutang_ekspedisi`, `id_ekspedisi`, `nama_ekspedisi`, `no_telepon_ekspedisi`
+FROM `tb_invoice_ekspedisi`
+JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`
+WHERE `id_invoice_ekspedisi` IS NULL', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(26): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(36): App\Models\ModelInvoiceEkspedisi->getInvoiceEkspedisi([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 06:47:55 --> mysqli_sql_exception: Not unique table/alias: 'tb_invoice' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(100): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 06:47:55 --> Not unique table/alias: 'tb_invoice'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang_ekspedisi) as hutang_ekspedisi, `id_customer`, `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`
+FROM `tb_invoice`
+LEFT JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`
+LEFT JOIN `tb_invoice` ON `tb_invoice`.`id` = `tb_invoice_ekspedisi`.`id`
+LEFT JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+GROUP BY `tb_invoice`.`id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(100): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 06:50:26 --> mysqli_sql_exception: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.tgl_pengiriman' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(100): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 06:50:26 --> Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.tgl_pengiriman' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang_ekspedisi) as hutang_invoice, `id_customer`, `tgl_pengiriman` `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+LEFT JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`
+GROUP BY `tb_invoice`.`id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(100): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 06:51:38 --> mysqli_sql_exception: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.tgl_pengiriman' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(sisa...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(sisa...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(sisa...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(100): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(NULL)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(NULL)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 06:51:38 --> Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice_ekspedisi.tgl_pengiriman' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(sisa_hutang_ekspedisi) as hutang_invoice, `id_customer`, `tgl_pengiriman` `nama_usaha`, `nama_cstmr`, `telepon`, `atas_nama`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+LEFT JOIN `tb_ekspedisi` ON `tb_ekspedisi`.`id` = `tb_invoice_ekspedisi`.`id_ekspedisi`
+GROUP BY `tb_invoice`.`id_customer`', [], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(100): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(24): App\Models\ModelInvoiceEkspedisi->getHutang(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-31 07:01:04 --> Undefined property: stdClass::$id_customer
+in APPPATH\Controllers\AJAX\PiutangEkspedisi.php on line 35.
+ 1 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_customer', 'APPPATH\\Controllers\\AJAX\\PiutangEkspedisi.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-31 07:01:47 --> Undefined property: stdClass::$id_customer
+in APPPATH\Controllers\AJAX\PiutangEkspedisi.php on line 34.
+ 1 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_customer', 'APPPATH\\Controllers\\AJAX\\PiutangEkspedisi.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-31 07:02:10 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(35): CodeIgniter\Model->__call('getInvoice', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->index(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 07:20:27 --> mysqli_sql_exception: Unknown column 'sisa_hutang_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(82): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\PiutangEkspedisi.php(111): App\Models\ModelInvoiceEkspedisi->getDetailHutang(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->getDetailHutang('5')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 07:20:27 --> Unknown column 'sisa_hutang_invoice' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_invoice_ekspedisi`, `no_invoice_ekspedisi`, `nilai_invoice_ekspedisi`, `sisa_hutang_invoice`, `tgl_pengiriman`
+FROM `tb_invoice`
+LEFT JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+RIGHT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:', [...], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(82): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(111): App\Models\ModelInvoiceEkspedisi->getDetailHutang([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->getDetailHutang('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-31 07:21:31 --> mysqli_sql_exception: Unknown column 'sisa_hutang_invoice' in 'field list' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoiceEkspedisi.php(82): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\PiutangEkspedisi.php(111): App\Models\ModelInvoiceEkspedisi->getDetailHutang(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->getDetailHutang('5')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-03-31 07:21:31 --> Unknown column 'sisa_hutang_invoice' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_invoice_ekspedisi`, `no_invoice_ekspedisi`, `nilai_invoice_ekspedisi`, `sisa_hutang_invoice`, `tgl_pengiriman`
+FROM `tb_invoice`
+LEFT JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+RIGHT JOIN `tb_invoice_ekspedisi` ON `tb_invoice_ekspedisi`.`id` = `tb_invoice`.`id_invoice_ekspedisi`
+WHERE `tb_invoice`.`id_customer` = :tb_invoice.id_customer:', [...], false)
+ 2 APPPATH\Models\ModelInvoiceEkspedisi.php(82): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\PiutangEkspedisi.php(111): App\Models\ModelInvoiceEkspedisi->getDetailHutang([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\PiutangEkspedisi->getDetailHutang('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\PiutangEkspedisi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

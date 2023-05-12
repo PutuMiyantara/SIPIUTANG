@@ -1,0 +1,719 @@
+CRITICAL - 2023-04-05 00:47:22 --> Undefined variable $query
+in APPPATH\Models\ModelPayment.php on line 38.
+ 1 APPPATH\Models\ModelPayment.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Models\\ModelPayment.php', 38)
+ 2 APPPATH\Controllers\AJAX\Payment.php(17): App\Models\ModelPayment->getPayment(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index(null)
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 00:47:25 --> Undefined property: stdClass::$no_invoice
+in APPPATH\Controllers\AJAX\Payment.php on line 22.
+ 1 APPPATH\Controllers\AJAX\Payment.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$no_invoice', 'APPPATH\\Controllers\\AJAX\\Payment.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 00:47:42 --> Undefined property: stdClass::$no_invoice
+in APPPATH\Controllers\AJAX\Payment.php on line 22.
+ 1 APPPATH\Controllers\AJAX\Payment.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$no_invoice', 'APPPATH\\Controllers\\AJAX\\Payment.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 00:48:49 --> Undefined property: stdClass::$no_invoice
+in APPPATH\Controllers\AJAX\Payment.php on line 22.
+ 1 APPPATH\Controllers\AJAX\Payment.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$no_invoice', 'APPPATH\\Controllers\\AJAX\\Payment.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 00:49:02 --> mysqli_sql_exception: Expression #13 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.no_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_paym...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_paym...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_paym...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_paym...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(34): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(17): App\Models\ModelPayment->getPayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 00:49:02 --> Expression #13 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.tb_invoice.no_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_payment`.`id`, `nominal_payment`, `tgl_pembayaran`, `tb_payment`.`keterangan` AS `keterangan_payment`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `id_rekening_penerima`, `tb_rekening_penerima`.`id_bank` as `id_bank_rek_penerima`, `nama_rekening`, `nomor_rekening`, `tb_rekening_penerima`.`keterangan` AS `keterangan_penerima`, `no_invoice`, `nama_cstmr`, `nama_usaha`, `atas_nama`
+FROM `tb_payment`
+JOIN `invoice_payment` ON `invoice_payment`.`id_payment` = `tb_payment`.`id`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+JOIN `tb_rekening_penerima` ON `tb_rekening_penerima`.`id` = `tb_payment`.`id_rekening_penerima`
+WHERE `id_rekening_penerima` = :id_rekening_penerima:
+GROUP BY `tb_payment`.`id`, `tb_customer`.`id`', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(34): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(17): App\Models\ModelPayment->getPayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 00:49:41 --> Undefined property: stdClass::$nilai_invoice
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nilai_invoice', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 00:49:58 --> Undefined property: stdClass::$tgl_invoice
+in APPPATH\Controllers\AJAX\Payment.php on line 24.
+ 1 APPPATH\Controllers\AJAX\Payment.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgl_invoice', 'APPPATH\\Controllers\\AJAX\\Payment.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 00:50:11 --> Undefined property: stdClass::$jth_tmpo
+in APPPATH\Controllers\AJAX\Payment.php on line 26.
+ 1 APPPATH\Controllers\AJAX\Payment.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$jth_tmpo', 'APPPATH\\Controllers\\AJAX\\Payment.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 00:50:28 --> Undefined property: stdClass::$sisa_hutang
+in APPPATH\Controllers\AJAX\Payment.php on line 27.
+ 1 APPPATH\Controllers\AJAX\Payment.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sisa_hutang', 'APPPATH\\Controllers\\AJAX\\Payment.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 00:50:38 --> Undefined property: stdClass::$ket_invoice
+in APPPATH\Controllers\AJAX\Payment.php on line 28.
+ 1 APPPATH\Controllers\AJAX\Payment.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ket_invoice', 'APPPATH\\Controllers\\AJAX\\Payment.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 00:50:48 --> Undefined property: stdClass::$id_customer
+in APPPATH\Controllers\AJAX\Payment.php on line 29.
+ 1 APPPATH\Controllers\AJAX\Payment.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_customer', 'APPPATH\\Controllers\\AJAX\\Payment.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 00:51:02 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\AJAX\Payment.php on line 31.
+ 1 APPPATH\Controllers\AJAX\Payment.php(31): array_push(null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 00:52:20 --> Undefined property: stdClass::$no_invoice
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$no_invoice', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 00:57:00 --> Undefined variable $query
+in APPPATH\Models\ModelPayment.php on line 36.
+ 1 APPPATH\Models\ModelPayment.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Models\\ModelPayment.php', 36)
+ 2 APPPATH\Controllers\AJAX\Payment.php(18): App\Models\ModelPayment->getPayment(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index(null)
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 00:59:22 --> Undefined variable $query
+in APPPATH\Models\ModelPayment.php on line 36.
+ 1 APPPATH\Models\ModelPayment.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Models\\ModelPayment.php', 36)
+ 2 APPPATH\Controllers\AJAX\Payment.php(18): App\Models\ModelPayment->getPayment(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index(null)
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 01:36:05 --> Undefined property: stdClass::$id_customer
+in APPPATH\Controllers\AJAX\Payment.php on line 23.
+ 1 APPPATH\Controllers\AJAX\Payment.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_customer', 'APPPATH\\Controllers\\AJAX\\Payment.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->index([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 03:04:46 --> mysqli_sql_exception: Expression #5 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.invoice_payment.nominal_payment_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(48): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(52): App\Models\ModelPayment->getInvoiceDetail(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->getInvoiceDetail(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 03:04:46 --> Expression #5 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.invoice_payment.nominal_payment_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `nilai_invoice`, `tgl_invoice`, `nominal_payment_invoice`
+FROM `invoice_payment`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+WHERE `invoice_payment`.`id_payment` = :invoice_payment.id_payment:
+GROUP BY `tb_invoice`.`id`', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(48): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(52): App\Models\ModelPayment->getInvoiceDetail([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->getInvoiceDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 03:05:35 --> mysqli_sql_exception: Expression #5 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.invoice_payment.nominal_payment_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(48): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(52): App\Models\ModelPayment->getInvoiceDetail(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->getInvoiceDetail(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 03:05:35 --> Expression #5 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.invoice_payment.nominal_payment_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `nilai_invoice`, `tgl_invoice`, `nominal_payment_invoice`
+FROM `invoice_payment`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+WHERE `invoice_payment`.`id_payment` = :invoice_payment.id_payment:
+GROUP BY `invoice_payment`.`id_invoice`', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(48): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(52): App\Models\ModelPayment->getInvoiceDetail([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->getInvoiceDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 03:05:57 --> mysqli_sql_exception: Expression #5 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.invoice_payment.nominal_payment_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(48): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(52): App\Models\ModelPayment->getInvoiceDetail(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->getInvoiceDetail(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 03:05:57 --> Expression #5 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.invoice_payment.nominal_payment_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `nilai_invoice`, `tgl_invoice`, `nominal_payment_invoice`
+FROM `invoice_payment`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+WHERE `invoice_payment`.`id_payment` = :invoice_payment.id_payment:
+GROUP BY `invoice_payment`.`id_invoice`', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(48): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(52): App\Models\ModelPayment->getInvoiceDetail([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->getInvoiceDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 03:07:11 --> mysqli_sql_exception: Expression #5 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.invoice_payment.nominal_payment_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(49): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(52): App\Models\ModelPayment->getInvoiceDetail(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->getInvoiceDetail(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 03:07:11 --> Expression #5 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.invoice_payment.nominal_payment_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `nilai_invoice`, `tgl_invoice`, `nominal_payment_invoice`
+FROM `invoice_payment`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+WHERE `invoice_payment`.`id_payment` = :invoice_payment.id_payment:
+GROUP BY `invoice_payment`.`id_invoice`, `invoice_payment`.`id_payment`', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(49): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(52): App\Models\ModelPayment->getInvoiceDetail([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->getInvoiceDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 03:09:28 --> mysqli_sql_exception: Expression #5 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.invoice_payment.nominal_payment_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(49): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(52): App\Models\ModelPayment->getInvoiceDetail(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->getInvoiceDetail(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 03:09:28 --> Expression #5 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'db_piutang.invoice_payment.nominal_payment_invoice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `nilai_invoice`, `tgl_invoice`, `invoice_payment`.`nominal_payment_invoice`
+FROM `invoice_payment`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+WHERE `invoice_payment`.`id_payment` = :invoice_payment.id_payment:
+GROUP BY `invoice_payment`.`id_invoice`, `invoice_payment`.`id_payment`', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(49): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(52): App\Models\ModelPayment->getInvoiceDetail([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->getInvoiceDetail([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 03:33:46 --> Undefined property: stdClass::$id_rekening_penerima
+in APPPATH\Controllers\AJAX\Payment.php on line 58.
+ 1 APPPATH\Controllers\AJAX\Payment.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_rekening_penerima', 'APPPATH\\Controllers\\AJAX\\Payment.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->getInvoiceDetail([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 03:34:27 --> Undefined property: stdClass::$id_rekening_penerima
+in APPPATH\Controllers\AJAX\Payment.php on line 58.
+ 1 APPPATH\Controllers\AJAX\Payment.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_rekening_penerima', 'APPPATH\\Controllers\\AJAX\\Payment.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->getInvoiceDetail([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 03:35:04 --> Undefined property: stdClass::$id_rekening_penerima
+in APPPATH\Controllers\AJAX\Payment.php on line 58.
+ 1 APPPATH\Controllers\AJAX\Payment.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_rekening_penerima', 'APPPATH\\Controllers\\AJAX\\Payment.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->getInvoiceDetail([...])
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 05:44:00 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_reke...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_reke...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_reke...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_reke...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelRekPenerima.php(31): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\RekPenerima.php(17): App\Models\ModelRekPenerima->getRekPenerima(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\RekPenerima->index(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\RekPenerima))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 05:44:00 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_rekening_penerima`.`id`, `nama_rekening`, `nomor_rekening`, `id_bank`, `nama_bank`, `alias`
+FROM `tb_rekening_penerima`
+LEFT JOIN `tb_bank` ON `tb_bank`.`id` = `tb_rekening_penerima`.`id_bank`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelRekPenerima.php(31): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\RekPenerima.php(17): App\Models\ModelRekPenerima->getRekPenerima([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\RekPenerima->index([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\RekPenerima))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 05:46:21 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_reke...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_reke...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_reke...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_reke...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelRekPenerima.php(31): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\RekPenerima.php(17): App\Models\ModelRekPenerima->getRekPenerima(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\RekPenerima->index(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\RekPenerima))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 05:46:21 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_rekening_penerima`.`id`, `nama_rekening`, `nomor_rekening`, `id_bank`, `nama_bank`, `alias`
+FROM `tb_rekening_penerima`
+LEFT JOIN `tb_bank` ON `tb_bank`.`id` = `tb_rekening_penerima`.`id_bank`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelRekPenerima.php(31): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\RekPenerima.php(17): App\Models\ModelRekPenerima->getRekPenerima([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\RekPenerima->index([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\RekPenerima))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 05:48:24 --> mysqli_sql_exception: Unknown column 'undefined' in 'where clause' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_reke...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_reke...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_reke...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_reke...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelRekPenerima.php(31): CodeIgniter\Database\BaseBuilder->getWhere('undefined')
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\RekPenerima.php(17): App\Models\ModelRekPenerima->getRekPenerima('undefined')
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\RekPenerima->index('undefined')
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\RekPenerima))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 05:48:24 --> Unknown column 'undefined' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_rekening_penerima`.`id`, `nama_rekening`, `nomor_rekening`, `id_bank`, `nama_bank`, `alias`
+FROM `tb_rekening_penerima`
+LEFT JOIN `tb_bank` ON `tb_bank`.`id` = `tb_rekening_penerima`.`id_bank`
+WHERE `undefined` IS NULL', [], false)
+ 2 APPPATH\Models\ModelRekPenerima.php(31): CodeIgniter\Database\BaseBuilder->getWhere('undefined')
+ 3 APPPATH\Controllers\AJAX\RekPenerima.php(17): App\Models\ModelRekPenerima->getRekPenerima('undefined')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\RekPenerima->index('undefined')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\RekPenerima))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 05:48:36 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_reke...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_reke...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_reke...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_reke...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelRekPenerima.php(31): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\RekPenerima.php(17): App\Models\ModelRekPenerima->getRekPenerima(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\RekPenerima->index(Array)
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\RekPenerima))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 05:48:36 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_rekening_penerima`.`id`, `nama_rekening`, `nomor_rekening`, `id_bank`, `nama_bank`, `alias`
+FROM `tb_rekening_penerima`
+LEFT JOIN `tb_bank` ON `tb_bank`.`id` = `tb_rekening_penerima`.`id_bank`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelRekPenerima.php(31): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\RekPenerima.php(17): App\Models\ModelRekPenerima->getRekPenerima([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\RekPenerima->index([...])
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\RekPenerima))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 06:22:36 --> Too few arguments to function App\Controllers\AJAX\Payment::verification(), 0 passed in C:\laragon\www\SIPIUTANG\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\AJAX\Payment.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->verification()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 07:02:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 222.
+ 1 APPPATH\Controllers\AJAX\Payment.php(222): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 222)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 07:03:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 222.
+ 1 APPPATH\Controllers\AJAX\Payment.php(222): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 222)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 07:03:41 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 222.
+ 1 APPPATH\Controllers\AJAX\Payment.php(222): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 222)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 07:03:51 --> mysqli_sql_exception: Table 'db_piutang.tb_invoice_payment' doesn't exist in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_paym...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_paym...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_paym...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_paym...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(59): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(226): App\Models\ModelPayment->getInvoicePayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 07:03:51 --> Table 'db_piutang.tb_invoice_payment' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_payment`.`id`, `nominal_payment`, `tgl_pembayaran`, `tb_payment`.`keterangan` AS `keterangan_payment`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `id_rekening_penerima`, `id_rekening_penerima`, `tb_rekening_penerima`.`id_bank` as `id_bank_rek_penerima`, `nama_rekening`, `nomor_rekening`, `tb_rekening_penerima`.`keterangan` AS `keterangan_penerima`, `id_customer`, `nama_cstmr`, `nama_usaha`, `atas_nama`
+FROM `tb_invoice_payment`
+JOIN `invoice_payment` ON `invoice_payment`.`id_payment` = `tb_payment`.`id`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+JOIN `tb_rekening_penerima` ON `tb_rekening_penerima`.`id` = `tb_payment`.`id_rekening_penerima`
+WHERE `id` = :id:
+GROUP BY `tb_payment`.`id`, `tb_customer`.`id`', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(59): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(226): App\Models\ModelPayment->getInvoicePayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 07:04:07 --> mysqli_sql_exception: Not unique table/alias: 'invoice_payment' in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_paym...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_paym...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_paym...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_paym...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(59): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(226): App\Models\ModelPayment->getInvoicePayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 07:04:07 --> Not unique table/alias: 'invoice_payment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_payment`.`id`, `nominal_payment`, `tgl_pembayaran`, `tb_payment`.`keterangan` AS `keterangan_payment`, `id_bank_pembayar`, `rekening_pembayar`, `atas_nama_pembayar`, `id_rekening_penerima`, `id_rekening_penerima`, `tb_rekening_penerima`.`id_bank` as `id_bank_rek_penerima`, `nama_rekening`, `nomor_rekening`, `tb_rekening_penerima`.`keterangan` AS `keterangan_penerima`, `id_customer`, `nama_cstmr`, `nama_usaha`, `atas_nama`
+FROM `invoice_payment`
+JOIN `invoice_payment` ON `invoice_payment`.`id_payment` = `tb_payment`.`id`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+JOIN `tb_rekening_penerima` ON `tb_rekening_penerima`.`id` = `tb_payment`.`id_rekening_penerima`
+WHERE `id` = :id:
+GROUP BY `tb_payment`.`id`, `tb_customer`.`id`', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(59): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(226): App\Models\ModelPayment->getInvoicePayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 07:05:19 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(46): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(226): App\Models\ModelPayment->getInvoicePayment(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 07:05:19 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `id_invoice`, `nominal_payment_invoice`
+FROM `invoice_payment`
+JOIN `tb_invoice` ON `invoice_payment`.`id_invoice` = `tb_invoice`.`id`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(46): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(226): App\Models\ModelPayment->getInvoicePayment([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 07:05:43 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AJAX\Payment.php on line 229.
+ 1 APPPATH\Controllers\AJAX\Payment.php(229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AJAX\\Payment.php', 229)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:34:54 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Payment.php(229): CodeIgniter\Model->__call('getInvoicePayment', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:35:48 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Payment.php(228): CodeIgniter\Model->__call('getInvoicePayment', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:36:08 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Payment.php(228): CodeIgniter\Model->__call('getInvoicePayment', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:37:37 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Payment.php(228): CodeIgniter\Model->__call('getInvoicePayment', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:38:23 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AJAX\Payment.php(233): CodeIgniter\Model->__call('getInvoice', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 08:38:37 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelInvoice.php(57): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(233): App\Models\ModelInvoice->getInvoice(Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 08:38:37 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT `tb_invoice`.`id`, `no_invoice`, `tgl_invoice`, `termin`, `jth_tmpo`, `nilai_invoice`, `sisa_hutang`, `id_customer`, `id_user`, `nama_cstmr`, `id_bank`, `rekening`, `atas_nama`, `nama_usaha`, `id_customer`, `ket_invoice`, `id_retur`, `nilai_retur`, `no_retur`, `nilai_sisa_retur`, `potongan_retur`
+FROM `tb_invoice`
+JOIN `tb_customer` ON `tb_customer`.`id` = `tb_invoice`.`id_customer`
+LEFT JOIN `tb_retur` ON `tb_retur`.`id` = `tb_invoice`.`id_retur`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelInvoice.php(57): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(233): App\Models\ModelInvoice->getInvoice([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:38:48 --> Undefined property: stdClass::$id_invoice
+in APPPATH\Controllers\AJAX\Payment.php on line 238.
+ 1 APPPATH\Controllers\AJAX\Payment.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_invoice', 'APPPATH\\Controllers\\AJAX\\Payment.php', 238)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:38:56 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\AJAX\Payment.php on line 232.
+ 1 APPPATH\Controllers\AJAX\Payment.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'APPPATH\\Controllers\\AJAX\\Payment.php', 232)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:39:20 --> Undefined property: stdClass::$id_invoice
+in APPPATH\Controllers\AJAX\Payment.php on line 238.
+ 1 APPPATH\Controllers\AJAX\Payment.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_invoice', 'APPPATH\\Controllers\\AJAX\\Payment.php', 238)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:46:25 --> Array to string conversion
+in APPPATH\Controllers\AJAX\Payment.php on line 245.
+ 1 APPPATH\Controllers\AJAX\Payment.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AJAX\\Payment.php', 245)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:55:26 --> deleteBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2826): CodeIgniter\Database\BaseBuilder->batchExecute('_deleteBatch', 100)
+ 2 APPPATH\Models\ModelPayment.php(173): CodeIgniter\Database\BaseBuilder->deleteBatch()
+ 3 APPPATH\Controllers\AJAX\Payment.php(244): App\Models\ModelPayment->deleteData([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:56:05 --> deleteBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2826): CodeIgniter\Database\BaseBuilder->batchExecute('_deleteBatch', 100)
+ 2 APPPATH\Models\ModelPayment.php(173): CodeIgniter\Database\BaseBuilder->deleteBatch()
+ 3 APPPATH\Controllers\AJAX\Payment.php(245): App\Models\ModelPayment->deleteData([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:56:45 --> You must specify a constraint to match on for batch deletes.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2850.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1792): CodeIgniter\Database\BaseBuilder->_deleteBatch('`invoice_payment`', [...], [...])
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2826): CodeIgniter\Database\BaseBuilder->batchExecute('_deleteBatch', 100)
+ 3 APPPATH\Models\ModelPayment.php(172): CodeIgniter\Database\BaseBuilder->deleteBatch([...])
+ 4 APPPATH\Controllers\AJAX\Payment.php(245): App\Models\ModelPayment->deleteData([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 08:57:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0 = :0:, 1 = :1:' at line 1 in C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\SIPIUTANG\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_invo...', 0)
+#1 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_invo...')
+#2 C:\laragon\www\SIPIUTANG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_invo...')
+#3 C:\laragon\www\SIPIUTANG\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invo...', Array, false)
+#4 C:\laragon\www\SIPIUTANG\app\Models\ModelPayment.php(175): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\SIPIUTANG\app\Controllers\AJAX\Payment.php(245): App\Models\ModelPayment->deleteData(Array, Array)
+#6 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+#7 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+#8 C:\laragon\www\SIPIUTANG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\SIPIUTANG\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\SIPIUTANG\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-04-05 08:57:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0 = :0:, 1 = :1:' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_invoice` SET 0 = :0:, 1 = :1:', [...], false)
+ 2 APPPATH\Models\ModelPayment.php(175): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\AJAX\Payment.php(245): App\Models\ModelPayment->deleteData([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AJAX\Payment->deleteData()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AJAX\Payment))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
